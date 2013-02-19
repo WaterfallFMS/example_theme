@@ -1,18 +1,26 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    {% yield_partial head %}
-  </head>
-  <body>
-    {% yield_partial fran_header %}
-    
-    <div class='maincontent'>
-      <div class='sidebar'>
-        {% yield_content Ad %}
-      </div>
-      
-      <div class='content'>
+<head>
+  {% yield_partial head %}
+</head>
+
+<body>
+<div class="body-wrapper">
+
+  <div class="container">
+    {% yield_partial franchise_header_menus %}
+    <div class="content-wrapper">
+      <div class="page-wrapper">
+        {% yield_flash %}
+        
         {% yield_page %}
       </div>
     </div>
-  </body>
+
+  </div>
+
+  {% yield_partial franchise_footer %}
+</div>
+
+</body>
 </html>

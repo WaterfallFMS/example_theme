@@ -1,0 +1,73 @@
+<div class="header-wrapper">
+  <div class="inner-header-wrapper">
+    <!-- Get Logo -->
+    <div class="logo-wrapper">
+      <img src="../images/header-logo.png" alt="Dr. Egghead" size="250x119">
+    </div>
+
+    <div class="top-navigation-left">
+        <ul id="menu-top-menu" class="menu">
+          <li>{% root_link Home %}</li>
+          <li>{% jobs_link Employment %}</li>
+          <li>{% page_link Contact %}</li>
+        </ul>
+    </div>
+
+    <div class="header-contact-number">
+      <div class="header-contact-yellow">Give Us A Call</div>
+      <div class="header-contact-teal">{{ location.phone }}</div>
+    </div>
+
+    <br class="clear" />
+  </div>
+  <!-- Inner header wrapper -->
+  <!-- Navigation -->
+  <div class="sixteen columns mb0">
+    <div class="navigation-wrapper">
+      <!-- Get Navigation -->
+      <div id="main-superfish-wrapper" class="menu-wrapper">
+        <!-- this is bad because the links are not auto calculated -->
+        <ul id="menu-main-menu" class="sf-menu sf-js-enabled sf-shadow">
+          <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item"><a href="/franchises/franchise-1">Home</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/franchises/franchise-1/pages/classes">Classes</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/franchises/franchise-1/pages/camps">Camps</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/franchises/franchise-1/pages/parties">Parties</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/franchises/franchise-1/pages/workshops">Workshops</a></li>
+          <li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor"><a href="/franchises/franchise-1/pages/science-academy" class="sf-with-ul">Science Academy<span class="sf-sub-indicator"> »</span></a><ul class="sub-menu" style="float: none; width: 15.384615384615385em; display: none; visibility: hidden;">
+
+
+            <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/jobs" style="float: none; width: auto;">Employment Office</a></li>
+</ul></li>          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/franchises/franchise-1/pages/contact">Contact</a></li>
+        </ul>
+        <!--<ul id="menu-main-menu" class="sf-menu">
+          <%= menu_link 'Home', franchise_path(@franchise) %>
+          <%= check_and_link 'Classes' %>
+          <%= check_and_link 'Camps' %>
+          <%= check_and_link 'Parties' %>
+          <%= check_and_link 'Workshops' %>
+          <%= check_and_link 'Science Academy' do %>
+            <%= check_and_link 'Academy Faqs' %>
+            <%= check_and_link 'Pro Egghead Office' %>
+            <%= menu_link 'Employment Office', jobs_path %>
+          <% end %>
+          <%= check_and_link 'Contact' %>
+        </ul>-->
+      </div>
+     
+    <!-- Social Media Moved Down to Footer -- 
+      <div class="social-wrapper">
+        <div class="social-icon-wrapper">
+          <div class="social-icon">
+            <a href="http://www.facebook.com/professoregghead"><img alt="facebook" src="/themes/dr_egghead/images/icon/light/social/facebook.png"></a>
+          </div>
+          <div class="social-icon">
+            <a href="http://twitter.com/@profegghead"><img alt="twitter" src="/themes/dr_egghead/images/icon/light/social/twitter.png"></a>
+          </div>
+        </div>
+      </div>  -->
+
+      <br class="clear" />
+    </div>
+  </div>
+  <br class="clear" />
+</div>

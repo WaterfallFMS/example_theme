@@ -1,0 +1,10 @@
+div.gdl-header-dropcap,
+div.shortcode-dropcap.circle{
+    position: relative;
+    z-index: 0;
+    behavior: url("../themes/dr_egghead/stylesheet/ie-fix/PIE.htc");
+}
+
+label img {
+    behavior: url("../themes/dr_egghead/stylesheet/ie-fix/label_img.htc");
+}

@@ -1,0 +1,78 @@
+<div class="header-wrapper">
+  <div class="inner-header-wrapper">
+    <!-- Get Logo -->
+    <div class="logo-wrapper">
+      <a href="/"><img src="../images/header-logo.png" alt="Dr. Egghead" size="250x119"></a>
+    </div>
+    
+
+    <div class="top-navigation-left">
+        <ul id="menu-top-menu" class="menu">
+          <li>{% root_link Home %}</li>
+          <li>{% jobs_link Employment %}</li>
+          <li>{% page_link Contact %}</li>
+        </ul>
+    </div>
+  
+
+    <div class="header-contact-number">
+      <div class="header-contact-yellow">Give Us A Call</div>
+      <div class="header-contact-teal">310.500.8185</div>
+    </div>
+    <br class="clear" />
+  </div>
+  <!-- Inner header wrapper -->
+  <!-- Navigation -->
+  <div class="sixteen columns mb0">
+    <div class="navigation-wrapper">
+      <!-- Get Navigation -->
+      <div id="main-superfish-wrapper" class="menu-wrapper">
+        <!-- this is bad because we cannot calculate the link URL automatically -->
+        <ul id="menu-main-menu" class="sf-menu">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item">{% root_link Home %}</li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor"><a href="/pages/services" class="sf-with-ul">Services<span class="sf-sub-indicator"> »</span></a><ul class="sub-menu" style="float: none; width: 14.5em; display: none; visibility: hidden;">
+              <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/pages/classes" style="float: none; width: auto;">Classes</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/pages/camps" style="float: none; width: auto;">Camps</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/pages/parties" style="float: none; width: auto;">Parties</a></li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/pages/workshops" style="float: none; width: auto;">Workshops</a></li>
+  </ul></li>          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/franchises">Locations</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor"><a href="/pages/franchise" class="sf-with-ul">Franchise<span class="sf-sub-indicator"> »</span></a><ul class="sub-menu" style="float: none; width: 14.5em; display: none; visibility: hidden;">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/pages/step-1" style="float: none; width: auto;">Step 1</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/pages/step-2" style="float: none; width: auto;">Step 2</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/pages/step-3" style="float: none; width: auto;">Step 3</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/pages/step-4" style="float: none; width: auto;">Step 4</a></li>
+  </ul></li>          <li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor"><a href="/pages/science-academy" class="sf-with-ul">Science Academy<span class="sf-sub-indicator"> »</span></a><ul class="sub-menu" style="float: none; width: 15.384615384615385em; display: none; visibility: hidden;">
+
+
+              <li class="menu-item menu-item-type-post_type menu-item-object-page" style="white-space: normal; float: left; width: 100%;"><a href="/jobs" style="float: none; width: auto;">Employment Office</a></li>
+  </ul></li>          <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/pages/contact">Contact</a></li>
+          </ul>
+          <!--{% root_link Home %}
+          <%= menu_link 'Home', root_path %>
+          <%= check_and_link 'Services' do %>
+            <%= check_and_link 'Classes' %>
+            <%= check_and_link 'Camps' %>
+            <%= check_and_link 'Parties' %>
+            <%= check_and_link 'Workshops' %>
+          <% end %>
+          <%= menu_link 'Locations', franchises_path %>
+          <%= check_and_link 'Franchise' do %>
+              <%= check_and_link 'Step 1' %>
+              <%= check_and_link 'Step 2' %>
+              <%= check_and_link 'Step 3' %>
+              <%= check_and_link 'Step 4' %>
+          <% end %>
+          <%= check_and_link 'Science Academy' do %>
+            <%= check_and_link 'Academy Faqs' %>
+            <%= check_and_link 'Pro Egghead Office' %>
+            <%= menu_link 'Employment Office', jobs_path %>
+          <% end %>
+          <%= check_and_link 'Contact' %>
+        </ul>-->
+      </div>
+
+      <br class="clear">
+    </div>
+  </div>
+  <br class="clear" />
+</div>

@@ -1,10 +1,19 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    {% yield_partial head %}
-  </head>
-  <body>
-    {% yield_partial fran_header %}
-    
-    <img src="../images/admin-logo.png">
-  </body>
+<head>
+  {% yield_partial head %}
+</head>
+
+<body>
+<div class="body-wrapper">
+
+  <div class="container">
+    {% yield_partial franchise_header_menus %}
+
+    {% yield_partial franchise_index_content %}
+  </div>
+
+  {% yield_partial franchise_footer %}
+</div>
+</body>
 </html>
