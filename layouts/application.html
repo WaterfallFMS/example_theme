@@ -4,15 +4,7 @@
   </head>
   <body>
     {% yield_partial corp_header %}
-    
-    <div class='maincontent'>
-      <div class='sidebar'>
-        {% yield_content Ad %}
-      </div>
-      
-      <div class='content'>
-        {% yield_page %}
-      </div>
-    </div>
+    {% yield_flash %}
+    {% yield_page %}
   </body>
 </html>

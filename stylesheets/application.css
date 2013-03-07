@@ -1,0 +1,28 @@
+/* default css */
+
+.section {
+  clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: left;
+}
+
+.error {
+  color: red;
+}
+
+.capabilities_delete_button, .capabilities_add_button, #naics_add_button, .naics_delete_button, #advanced_search {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tier {
+  border: 1px solid #b9c1d6;
+  margin: 5px;
+}
+.red-tier {
+  background-color: #e5ebf3;
+}
