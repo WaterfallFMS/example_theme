@@ -1,0 +1,35 @@
+<div id="nav">
+    <div class="wrap">
+      <div class="text-reset">
+    <ul class="main_nav">
+      <li class="first"><a href="{% page_url About The Post %}"><span>About The Post</span></a>
+        <ul>
+          <li><a href="{% page_url Mission, Vision, Values %}"><span>Mission, Vision, Values</span></a></li>
+          <li><a href="{% page_url Post Leadership %}"><span>Post Leadership</span></a></li>
+          <li class="last"><a href="{% page_url ByLaws %}"><span>ByLaws</span></a></li>
+        </ul>
+      </li>
+      <li><a href="{% page_url Membership %}"><span>Membership</span></a>
+        <ul>
+          <li><a href="{% page_url Benefits %}"><span>Benefits</span></a></li>
+          <li class="last"><a href="{% page_url Sustaining Members %}"><span>Sustaining Members</span></a></li>
+        </ul>
+      </li>
+      <li><a href="{% blogs_url %}"><span>News</span></a>
+        <ul>
+          <li class="last"><a href="{% blogs_url %}"><span>Post Notes</span></a></li>
+        </ul>
+      </li>
+      <li><a href="{% events_url %}"><span>Meetings & Events</span></a>
+        <ul>
+          <li class="last"><a href="{% yield_content National Events URL %}"><span>National Events</span></a></li>
+        </ul>
+      </li>
+      <li class="last external"><a href="http://same.org" target="_blank"><span>Same.org</span></a></li>
+    </ul>
+  <div class="clear"></div>
+  
+      </div>
+    </div>
+    <div id="right_nav"></div>
+  </div>

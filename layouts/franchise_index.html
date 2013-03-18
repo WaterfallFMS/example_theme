@@ -1,0 +1,36 @@
+<html>
+  <head>
+    {% yield_partial head %}
+  </head>
+  <body>
+    {% yield_partial fran_header %}
+    {% yield_partial fran_menu %}
+    
+    
+ <div id="main">
+    <div class="wrap">
+      <div class="text-reset">
+          <div id="main-inner">
+            <div class='notice'>{{location.name}}test text</div>  
+
+      <!--**********************Left Content Section***********************-->
+             <div id="content">
+                {% yield_partial fran_index_content %}
+             </div>
+             
+             <div id="right">  
+                {% yield_partial fran_index_right %}
+             </div>
+
+             <div class="clear"></div>
+          
+          </div>
+      </div>
+    </div>
+  </div>
+       
+       
+       
+    {% yield_partial fran_footer %}
+  </body>
+</html>

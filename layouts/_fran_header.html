@@ -1,15 +1,19 @@
-<div class='header'>
-  <span class="name">{{ location.name }}</span>
-  <span class="email">{{ location.support_email}}</span>
-</div>
-
-<div class="menu">
-  <a href="/">Home</a>
-  {% page_link Page 1 %}
-  {% page_link Page 2 %}
-  {% page_link Page 3 %}
-  {% blog_link Blog %}
-  {% events_link Events %}
-  {% jobs_link Employment %}
-  {% store_link Shop %}
-</div>
+  <div id="header">
+    <div class="wrap">
+      <div class="text-reset">
+        <div id="logo">
+        <a href="{% root_url %}"><img src="../images/logo.png" alt="" id="logo" /></a>
+        </div>
+        <div id="subtitle"><span class="top" >{{location.name}}</span><br/>Post</div>
+    <div id="top-nav">
+      <ul>
+        <li class="first"><a href="{% root_url %}"><span>Home</span></a></li>
+        <li class="last"><a href="{% page_url Contact Us %}"><span>Contact Us</span></a></li>
+      </ul>		
+    </div>  
+     
+  <div class="clear"></div>
+  
+    </div>
+    </div>
+  </div>
