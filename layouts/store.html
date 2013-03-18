@@ -3,6 +3,8 @@
     {% yield_partial head %}
   </head>
   <body>
+    {% yield_flash %}
+    
     {% yield_page %}
   </body>
 </html>
