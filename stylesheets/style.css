@@ -38,7 +38,7 @@ a.email { background: url('../images/icons/mailto.gif') 0px 3px no-repeat; paddi
 
 h1 {
   margin: 0 0 10px 0;
-  font-size: 3.0em;
+  font-size: 2.4em;
   font-family: Impact, arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -46,7 +46,11 @@ h1 {
   border-bottom: 7px solid #EEEEEE;
   margin-bottom: 5px;
   padding-bottom: 5px;
+}
+
+h1.home {
   padding-left: 10px;
+  font-size: 3.0em;
 }
 
 
@@ -68,6 +72,16 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
+}
+
+h4 {
+color: #1b4986;
+font-size: 1.8em;
+font-family: arial, helvetica, sans-serif;
+font-weight: normal;
+border-bottom: 1px solid #EEEEEE;
+margin-bottom: 5px;
+padding-bottom: 5px;
 }
 
 .white {
@@ -101,6 +115,8 @@ option { padding: 2px 6px; border: 0; }
 li { margin: 0 0 5px 0; }
 
 p { margin: 0; padding: 0 0 15px 0; color: #646464; }
+
+#content p { font-size: 1.2em;  }
 
 hr { height: 1px; margin: 0 0 15px 0; border: 0; border-bottom: 1px solid #000000; }
 
@@ -369,15 +385,16 @@ position: relative;
 top: -3px;
 }
 
-#ad_placement {
+.right_side_box {
 background-color: #E1E7EF;
-float: left;
 height: 45px;
-padding: 10px 15px 2px;
+padding: 10px 15px 10px;
 width: 280px;
+margin-bottom:20px;
+float: left;
 }
 
-#ad_placement p {
+.right_side_box p {
 color: #1B4986;
 float: left;
 font-family: Impact,arial,sans-seif;
@@ -388,7 +405,7 @@ text-transform: uppercase;
 width: 160px;
 }
 
-#ad_placement .logo_same {
+.right_side_box .logo_same {
 float: right;
 }
 
@@ -482,30 +499,59 @@ height: 95px;
 margin-bottom: 20px;
 }
 
-#call_out_arrow_area #connect {
+
+/* Right Side */
+
+#join_box {
+background-color: #1b4986;
+padding: 10px;
+float: left;
+height: 45px;
+margin-bottom: 20px;
+width: 290px;
+}
+
+#join_box .left {
+width: 115px;
+float: left;
+text-transform: uppercase;
+}
+
+
+#join_box .right {
+background: url("../images/white-arrow.png") no-repeat scroll right top transparent;
+float: left;
+margin-top: 6px;
+padding-right: 29px;
+width: 145px;
+}
+
+
+
+#connect {
 color: #1b4986;
 font-size: 1.4em;
 font-family: Impact, arial, sans-serif;
 text-transform: uppercase;
 font-weight: normal;
-padding-left: 20px;
-padding-top: 5px;
-width: 400px;
+padding-top: 0px;
+width: 270px;
 float: left;
+margin-bottom: -10px;
 }
 
-#call_out_arrow_area #connect img {
+#connect img {
     position: relative;
     top: 5px;
     padding-left: 2px;
     padding-right: 2px;
 }
 
-#call_out_arrow_area #connect a.first {
+#connect a.first {
 margin-left: 10px;
 }
 
-#call_out_arrow_area #newsletter {
+#newsletter {
 color: #1b4986;
 font-size: 1.4em;
 font-family: Impact, arial, sans-serif;
@@ -517,45 +563,69 @@ width: 400px;
 float: left;
 }
 
+#newsletter_int {
+    color: #1B4986;
+    float: left;
+    font-family: Impact,arial,sans-serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-transform: uppercase;
+    width: 285px;
+}
+
+#newsletter_int form {
+float: right;
+width: 215px;
+}
+
+#newsletter_int form #submit {
+    background-color: #D61F47;
+    border: medium none;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 8px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 #call_out_arrow_area #join_title {
 float: right;
 position: relative;
 right: 20px;
-top: -22px;
+top: -25px;
 }
 
-#call_out_arrow_area #join_title .large {
+.large {
 font-size: 3.4em;
 font-family: Impact, times, serif;
 }
 
-#call_out_arrow_area #join_title .medium {
+.medium {
 font-size: 2.0em;
 color: #ffffff;
 position: relative;
 top: -5px;
-overflow: hidden;
 }
 
-#call_out_arrow_area #join_title .small {
-    color: #FFFFFF;
-    font-family: Impact,Arial;
-    font-size: 3em;
-    position: relative;
-    top: -7px;
+.small {
+font-size: 1.6em;
+color: #ffffff;
+position: relative;
+top: -10px;
 }
 
-#call_out_arrow_area #email_address {
+#email_address {
 border: 1px solid #adadad;
 margin-left: 10px;
 margin-right: 10px;
 }
 
-#newsletter form {
-display: inline-block;
-}
-
-#call_out_arrow_area #submit {
+#newsletter #submit {
 border-radius: 10px;
 background-color: #d61f47;
 color: #ffffff;
@@ -567,12 +637,16 @@ font-weight: bold;
 cursor: pointer;
 }
 
-#call_out_arrow_area #submit:hover {
+#submit:hover {
     background-color: #A91132;
 }
 
-#notes  {
-
+.page_intro {
+color: #396aab;
+font-family: arial, helvetica, sans-serif;
+font-size: 1.4em;
+line-height: 1.8em;
+margin: 20px 30px;
 }
 
 #first_story {
@@ -584,7 +658,7 @@ margin-top: 10px;
 padding-bottom: 15px;
 }
 
-#story {
+.story {
 border-bottom: 1px solid #EEEEEE;
 clear: both;
 float: left;
@@ -593,7 +667,7 @@ padding-bottom: 15px;
 padding-top: 15px;
 }
 
-#story.last {
+.story.last {
 border-bottom: none;
 }
 
@@ -657,6 +731,50 @@ width: 390px;
     text-transform: uppercase;
 }
 
+.post-row .staff img {
+border: 3px solid #FFFFFF;
+-moz-box-shadow: 3px 3px 4px #ccc;
+-webkit-box-shadow: 3px 3px 4px #ccc;
+box-shadow: 3px 3px 4px #ccc;
+float: left;
+}
+.post-row .title {
+font-weight: bold;
+font-size: 1.2em;
+color: #1b4986;
+}
+
+.post-row {
+border-bottom: 1px solid #EEEEEE;
+float: left;
+margin-bottom: 10px;
+padding-bottom: 10px;
+padding-left: 15px;
+padding-top: 20px;
+width: 590px;
+}
+
+.post-row.last {
+border-bottom: none;
+}
+
+.staff {
+margin-right: 25px;
+}
+
+.staff-left {
+width: 250px;
+margin-right: 30px;
+float: left;
+margin-left: 25px;
+margin-top: 5px;
+}
+
+.staff-right {
+width: 100px;
+float: left;
+margin-top: 5px;
+}
 
 
 
@@ -694,7 +812,7 @@ width: 390px;
 
 #header { background-image:url('../images/header_bg.jpg'); height: 95px; }
 
-#header #logo  {
+#header #logo-img  {
 margin-top: 10px;
 margin-left: 10px;
 float: left;
