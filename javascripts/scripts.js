@@ -3,7 +3,7 @@ jQuery.noConflict();
 
 jQuery(document).ready(function($) { 
 
-  $('h1,h2,h3,h4,h5,h6').each(function(){
+  $('h1,h2,h3').each(function(){
     console.log($(this).hasClass('skip'));
     if($(this).hasClass('skip')){ return; }
     
