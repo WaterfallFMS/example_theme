@@ -6,11 +6,9 @@
 
 <link rel="stylesheet" type="text/css" href="../stylesheets/calendar.css">
 <link rel="stylesheet" type="text/css" href="../stylesheets/map.css">
-<link rel="stylesheet" type="text/css" href="../stylesheets/application.css">
 <link href="../stylesheets/style.css" rel="stylesheet" type="text/css" />
 
-<script src="../javascripts/jquery.js" type="text/javascript"></script>
-<script src="../javascripts/fullcalendar.js" type="text/javascript"></script>
+{% default_js %}
 <script src="../javascripts/application.js" type="text/javascript"></script>
 <script type="text/javascript" src="../javascripts/superfish.js"></script>  
 <script type="text/javascript" src="../javascripts/scripts.js"></script>
@@ -19,3 +17,7 @@
   <!--[if lte IE 6]>
     <script defer src="javascripts/ie.js" type="text/javascript"></script>
   <![endif]-->
+
+{% seo_tags %}
+{% analytics_tag %}
+{% yield_head %}
