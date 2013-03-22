@@ -39,7 +39,7 @@ a.email { background: url('../images/icons/mailto.gif') 0px 3px no-repeat; paddi
 h1 {
   margin: 0 0 10px 0;
   font-size: 2.4em;
-  font-family: Impact, arial, sans-serif;
+  font-family: Impact, "nimbus-sans-condensed", arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
@@ -58,7 +58,7 @@ h2 {
   margin: 0 0 10px 0;
 	color: #666;
 	font-size: 2.0em;
-  font-family: Impact, arial, sans-serif;
+  font-family: Impact, "nimbus-sans-condensed", arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
@@ -68,7 +68,7 @@ h3 {
   margin: 0 0 5px 0;
 	color: #333;
 	font-size: 1.5em;
-  font-family: Impact, arial, sans-serif;
+  font-family: Impact, "nimbus-sans-condensed", arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
@@ -296,24 +296,34 @@ margin-right: 10px;
 }
 
 #second_home_block a.message {
-background: url("../images/blue_button_bg.jpg") no-repeat scroll left top transparent;
-color: #1B4986;
-display: block;
-float: left;
-font-family: Impact, arial,sans-serif;
-font-size: 1.3em;
-height: 27px;
-letter-spacing: 0px;
-padding-left: 15px;
-padding-top: 7px;
-text-decoration: none;
-text-transform: uppercase;
-width: 156px;
-font-weight: normal;
+    background: url("../images/blue_button_bg.jpg") repeat-x scroll center top #7A9BC8;
+    color: #1B4986;
+    display: block;
+    float: left;
+    font-family: Impact,"nimbus-sans-condensed",arial,sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    height: 20px;
+    letter-spacing: 0;
+    margin-left: -11px;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 7px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 50;
+}
+
+#second_home_block img.pres {
+    float: left;
+    position: relative;
+    z-index: 56;
 }
 
 #second_home_block a.message:hover {
-background: url('../images/blue_button_bg_hover.jpg') no-repeat scroll left top transparent;
+background: url('../images/blue_button_bg_hover.jpg') repeat-x scroll center top #7a9bc8;
 text-decoration: none;
 }
 
@@ -387,7 +397,7 @@ top: -3px;
 
 .right_side_box {
 background-color: #E1E7EF;
-height: 45px;
+height: 40px;
 padding: 10px 15px 10px;
 width: 280px;
 margin-bottom:20px;
@@ -493,10 +503,12 @@ background: url('../images/hero_arrow_next.png') no-repeat center center #dc264e
 
 
 #call_out_arrow_area {
-background: url('../images/middle_section_bg.jpg') no-repeat left top transparent;
-width: 605px;
-height: 95px;
-margin-bottom: 20px;
+    background: url("../images/middle_section_bg.jpg") no-repeat scroll left top transparent;
+    height: 95px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-top: 7px;
+    width: 605px;
 }
 
 
@@ -527,11 +539,22 @@ width: 145px;
 }
 
 
-
 #connect {
+color: #1B4986;
+float: left;
+font-family: Impact,"nimbus-sans-condensed",arial,sans-serif;
+font-size: 1.4em;
+font-weight: normal;
+margin-bottom: -10px;
+padding-top: 0;
+text-transform: uppercase;
+width: 270px;
+}
+
+#connect_int {
 color: #1b4986;
 font-size: 1.4em;
-font-family: Impact, arial, sans-serif;
+font-family: Impact, "nimbus-sans-condensed", arial, sans-serif;
 text-transform: uppercase;
 font-weight: normal;
 padding-top: 0px;
@@ -540,25 +563,24 @@ float: left;
 margin-bottom: -10px;
 }
 
-#connect img {
+#connect img, #connect_int img {
     position: relative;
     top: 5px;
     padding-left: 2px;
     padding-right: 2px;
 }
 
-#connect a.first {
+#connect a.first, #connect_int a.first {
 margin-left: 10px;
 }
 
 #newsletter {
 color: #1b4986;
 font-size: 1.4em;
-font-family: Impact, arial, sans-serif;
+font-family: Impact, "nimbus-sans-condensed", arial, sans-serif;
 text-transform: uppercase;
 font-weight: normal;
-padding-left: 20px;
-margin-top: 30px;
+margin-top: 35px;
 width: 400px;
 float: left;
 }
@@ -571,6 +593,29 @@ float: left;
     font-weight: normal;
     text-transform: uppercase;
     width: 285px;
+}
+
+#newsletter form {
+    float: right;
+    width: 330px;
+}
+
+#newsletter #email_address {
+float: left;
+}
+
+#newsletter #submit {
+    background-color: #D61F47;
+    border: medium none;
+    border-radius: 10px 10px 10px 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #newsletter_int form {
@@ -594,29 +639,33 @@ width: 215px;
 }
 
 #call_out_arrow_area #join_title {
-float: right;
-position: relative;
-right: 20px;
-top: -25px;
+    float: right;
+    position: relative;
+    right: 20px;
+    top: -20px;
+    width: 130px;
 }
 
 .large {
 font-size: 3.4em;
-font-family: Impact, times, serif;
+font-family: Impact, "nimbus-sans-condensed", times, serif;
 }
 
 .medium {
-font-size: 2.0em;
-color: #ffffff;
-position: relative;
-top: -5px;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    line-height: 1em;
+    position: relative;
+    top: -5px;
+    font-weight: bold;
 }
 
 .small {
-font-size: 1.6em;
+font-size: 1.4em;
+line-height: 1.4em;
 color: #ffffff;
 position: relative;
-top: -10px;
+top: -8px;
 }
 
 #email_address {
@@ -625,19 +674,7 @@ margin-left: 10px;
 margin-right: 10px;
 }
 
-#newsletter #submit {
-border-radius: 10px;
-background-color: #d61f47;
-color: #ffffff;
-padding-left: 10px;
-padding-right: 10px;
-border: none;
-font-size: .9em;
-font-weight: bold;
-cursor: pointer;
-}
-
-#submit:hover {
+#submit:hover, #newsletter #submit:hover, #newsletter_int #submit:hover {
     background-color: #A91132;
 }
 
@@ -813,7 +850,7 @@ margin-top: 5px;
 #header { background-image:url('../images/header_bg.jpg'); height: 95px; }
 
 #header #logo-img  {
-margin-top: 10px;
+margin-top: 20px;
 margin-left: 10px;
 float: left;
 }
@@ -889,7 +926,7 @@ background-image: none;
 border-left: 1px solid #e07f96;
 }
 
-#nav ul li a span{ display: block; padding: 10px 20px; }
+#nav ul li a span{ display: block; padding: 10px 19px; }
 
 /*  Secondary    */
 #nav ul li ul {  position: absolute; background-color: #d6204d; width: 200px; margin: 0; padding: 0; left: -999em;  z-index: 999; }
