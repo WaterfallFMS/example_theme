@@ -509,6 +509,16 @@ background: url('../images/hero_arrow_next.png') no-repeat center center #dc264e
     padding-left: 15px;
     padding-top: 7px;
     width: 605px;
+    margin-top: 10px;
+}
+
+.messages, .error, .warning, .notice {
+    background-color: #FCFDD6;
+    border: 1px solid #DDDFAB;
+    color: #666666;
+    margin-bottom: 2px;
+    padding: 5px 15px;
+    text-align: center;
 }
 
 
