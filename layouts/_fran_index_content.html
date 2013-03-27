@@ -1,74 +1,33 @@
-<!--<div id="slideshowContainer">
-  <h1>Aston Martin</h1>
-  <div class="slideshow"> 
-      <img src="../images/hero_image1.jpg" width="600" height="300" /> 
-      <img src="../images/hero_image2.jpg" width="600" height="300" /> 
-      <img src="../images/hero_image3.jpg" width="600" height="300" /> 
-  </div>
-  <ul id="nav">
-    <li id="prev"><a href="#">Previous</a></li>
-    <li id="next"><a href="#">Next</a></li>
-  </ul>
-</div>-->
+<div id="slideshow" class="pics" style="margin:auto">
+    <div id="slide-image">
+        <img src="../images/hero_image1.jpg"/> 
+        <img src="../images/hero_image2.jpg" /> 
+        <img src="../images/hero_image3.jpg" /> 
+    </div>
+    
+    <div id="text-box">
+        <div id="text-box-inner">
+            <p>Looking across the Missouri River towards the concrete canal being installed at the new  Rainbow Dam ....  <strong><a href="/">[READ MORE]</a></strong></p>
+            <p>Slide two - Lorem Ipsum ....  <strong><a href="/">[READ MORE]</a></strong></p>
+            <p>Slide three - Lorem Ipsum ....  <strong><a href="/">[READ MORE]</a></strong></p>
+        </div>
+    </div>
+    <div class="slideshow-controls-bottom">
+        <div class="slideshow-controls-bottom-button left-btn"><a href="#"></a></div>
+        <div class="slideshow-controls-bottom-button right-btn"><a href="#"></a></div>
+    </div>
+</div>
           
-          <!--<div style="text-align:center;"><a href="#"><span id="prev">Prev</span></a> <a href="#"><span id="next">Next</span></a></div>
-          <div id="slideshow" class="pics" style="margin:auto;">
-              <img src="../images/hero_image1.jpg" />
-          </div> -->
+<div id="call_out_arrow_area">
+    <div id="connect">Stay Connected 
+      {% yield_content Stay Connected %}
+      <!-- Blog RSS Feed -->
+      <!--<a href="{% blogs_url %}"><img width="24px" height="24px" src="../images/rss_32.png"></a>-->
+    </div>
+    <div id="newsletter">{% yield_partial newsletter_form %}</div>
+    <div id="join_title"><span class="white large">Join</span><span class="light_blue large">The</span><br/><span class="medium">{{location.name}}</span><br/><span class="small">Post</span></div>
+</div>
           
-          <div id="slideshow" class="pics" style="margin:auto">
-              <div id="slide-image">
-                  <img src="../images/hero_image1.jpg"/> 
-                  <img src="../images/hero_image2.jpg" /> 
-                  <img src="../images/hero_image3.jpg" /> 
-              </div>
-              
-              <div id="text-box">
-                  <div id="text-box-inner">
-                      <p>Looking across the Missouri River towards the concrete canal being installed at the new  Rainbow Dam ....  <strong><a href="/">[READ MORE]</a></strong></p>
-                      <p>Slide two - Lorem Ipsum ....  <strong><a href="/">[READ MORE]</a></strong></p>
-                      <p>Slide three - Lorem Ipsum ....  <strong><a href="/">[READ MORE]</a></strong></p>
-                  </div>
-              </div>
-              <div class="slideshow-controls-bottom">
-                  <div class="slideshow-controls-bottom-button left-btn"><a href="#"></a></div>
-                  <div class="slideshow-controls-bottom-button right-btn"><a href="#"></a></div>
-              </div>
-          </div>
-          
-          <div id="call_out_arrow_area">
-              <div id="connect">Stay Connected 
-                {% yield_content Stay Connected %}
-                <!-- Blog RSS Feed -->
-                <!--<a href="{% blogs_url %}"><img width="24px" height="24px" src="../images/rss_32.png"></a>-->
-              </div>
-              <div id="newsletter">{% yield_partial newsletter_form %}</div>
-              <div id="join_title"><span class="white large">Join</span><span class="light_blue large">The</span><br/><span class="medium">{{location.name}}</span><br/><span class="small">Post</span></div>
-          </div>
-          
-          <div id="notes">
-              <!-- TODO: replace with programming, 3 blogs -->
-              <h1>Post Notes</h1>
-                  <div class="first_story story">
-                      <!--<div class="story_image"><img src="../images/example_story_image.jpg" /></div>-->
-                      <div class="story_content">
-                          <div class="story_title"><span class="uppercase">Red Horse</span> Captain speaks to Veterans of Foreign Wars</div>
-                          <div class="story_date"><strong>February</strong> 24, 2013</div>
-                          <div class="first_story_content">Capt Nick Saccone, with the 819th RED HORSE, was allowed the opportunity to speak at the Veterans of Foreign Wars (VFW) on the 1st of May about his deployment experiences.</div>
-                      </div>
-                  </div>
-                  
-                  <div class="story">
-                      <div class="story_date2">
-                          <strong>February</strong> 21, 2013
-                      </div>
-                      <div class="story_intro">2011 USAF Academy SAME Engineering and Construction Camp. The Big Sky Post is sponsoring Mr. Eric Mitchell ... <span class="story_read_more"><a href="/">[READ MORE]</a></span></div>
-                  </div>
-                  
-                  <div class="story" class="last">
-                      <div class="story_date2">
-                          <strong>February</strong> 05, 2013
-                      </div>
-                      <div class="story_intro">The USAFA camp is geared toward high school students interested in joining a service ... <span class="story_read_more"><a href="/">[READ MORE]</a></span></div>
-                  </div>
-           </div>
+<div id="notes">
+  {% yield_partial fran_index_blog %}
+</div>
