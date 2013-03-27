@@ -42,8 +42,7 @@
                 <!-- Blog RSS Feed -->
                 <!--<a href="{% blogs_url %}"><img width="24px" height="24px" src="../images/rss_32.png"></a>-->
               </div>
-              <!-- TODO: replace with lead gen form -->
-              <div id="newsletter">Newsletter <form action="/leads" method="post"><input id="email_address" class="email_field" type="text" maxlength="128" size="30" value="" name="email"> <input id="submit" class="submit" type="submit" value="Submit" name="op"></form></div>
+              <div id="newsletter">{% yield_partial newsletter_form %}</div>
               <div id="join_title"><span class="white large">Join</span><span class="light_blue large">The</span><br/><span class="medium">{{location.name}}</span><br/><span class="small">Post</span></div>
           </div>
           

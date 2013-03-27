@@ -4,9 +4,8 @@
   </div>
 </div>
 
-<!--********** TODO Make Form Work******************--> 
- <div class="right_side_box">
-    <div id="newsletter_int">Newsletter <form action=/leads method=post><input id="email_address" class="email_field" type="text" maxlength="128" size="30" value="" name="email"> <input id="submit" class="submit" type="submit" value="Submit" name="op"></form></div>
+<div class="right_side_box">
+  <div id="newsletter_int">{% yield_partial newsletter_form %}</div>
 </div>
 
 <div id="join_box">
