@@ -44,7 +44,7 @@ h1 {
   letter-spacing: 1px;
   font-weight: normal;
   border-bottom: 7px solid #EEEEEE;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding-bottom: 5px;
 }
 
@@ -106,9 +106,9 @@ table td { vertical-align: top; padding: 5px; }
 
 object, embed { border: 0; outline: 0; }
 
-fieldset { border: 1px solid #666666; padding: 10px; }
+fieldset { border: 1px solid #DADADB; padding: 10px; }
 legend { font-weight: bold; color: #666666; }
-input, select, option, textarea { padding: 2px; border: 1px solid #666666; }
+input, select, option, textarea { padding: 2px; border: 1px solid #DADADB; padding: 2px; }
 option { padding: 2px 6px; border: 0; }
 
 #content ul, #content  ol { margin: 0 0 15px 30px; }
@@ -397,7 +397,7 @@ top: -3px;
 
 .right_side_box {
 background-color: #E1E7EF;
-height: 40px;
+height: 45px;
 padding: 10px 15px 10px;
 width: 280px;
 margin-bottom:20px;
@@ -417,6 +417,24 @@ width: 160px;
 
 .right_side_box .logo_same {
 float: right;
+}
+
+.blog_entry h3 {
+color: #1B4986;
+font-family: arial,sans-serif;
+font-size: 1.2em;
+font-weight: normal;
+letter-spacing: 0px;
+margin: 0 0 0px;
+text-transform: none;
+}
+
+.blog_entry h3 a {
+color: #1B4986;
+}
+
+.blog_entry h3 a:hover {
+color: #7698C6;
 }
 
 /* Home Slideshow */
@@ -503,13 +521,13 @@ background: url('../images/hero_arrow_next.png') no-repeat center center #dc264e
 
 
 #call_out_arrow_area {
-    background: url("../images/middle_section_bg.jpg") no-repeat scroll left top transparent;
+    background: url("/themes/same/images/middle_section_bg.jpg") no-repeat scroll left top transparent;
     height: 95px;
     margin-bottom: 20px;
-    padding-left: 15px;
-    padding-top: 7px;
-    width: 605px;
     margin-top: 10px;
+    padding-left: 15px;
+    padding-top: 17px;
+    width: 605px;
 }
 
 .messages, .error, .warning, .notice {
@@ -541,11 +559,12 @@ text-transform: uppercase;
 
 
 #join_box .right {
-background: url("../images/white-arrow.png") no-repeat scroll right top transparent;
+background: url("/themes/same/images/white-arrow.png") no-repeat scroll right center transparent;
 float: left;
-margin-top: 6px;
 padding-right: 29px;
+padding-top: 10px;
 width: 145px;
+margin-top: 3px;
 }
 
 
@@ -584,6 +603,16 @@ margin-bottom: -10px;
 margin-left: 10px;
 }
 
+.blog-post-details {
+    color: #1B4986;
+    font-size: 1.1em;
+}
+
+.blog-post-details p {
+    color: #1B4986;
+    padding-bottom: 0px;
+}
+
 #newsletter {
 color: #1b4986;
 font-size: 1.4em;
@@ -607,7 +636,7 @@ float: left;
 
 #newsletter form {
     float: right;
-    width: 330px;
+    width: 328px;
 }
 
 #newsletter #email_address {
@@ -630,7 +659,7 @@ float: left;
 
 #newsletter_int form {
 float: right;
-width: 215px;
+width: 210px;
 }
 
 #newsletter_int form #submit {
@@ -646,6 +675,21 @@ width: 215px;
     margin-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+form .button {
+font-size: 1.2em;
+background-color: #D61F47;
+border: medium none;
+border-radius: 10px 10px 10px 10px;
+color: #FFFFFF;
+cursor: pointer;
+float: left;
+font-weight: bold;
+margin-right: 8px;
+margin-top: 15px;
+padding-left: 10px;
+padding-right: 10px;
 }
 
 #call_out_arrow_area #join_title {
@@ -680,12 +724,19 @@ top: -8px;
 
 #email_address {
 border: 1px solid #adadad;
-margin-left: 10px;
+margin-left: 5px;
 margin-right: 10px;
+width: 200px;
+}  
+
+#submit:hover, #newsletter #submit:hover, #newsletter_int #submit:hover, form .button:hover {
+    background-color: #A91132;
 }
 
-#submit:hover, #newsletter #submit:hover, #newsletter_int #submit:hover {
-    background-color: #A91132;
+form.new_comment label {
+width: 200px;
+text-align: left;
+display: block;
 }
 
 .page_intro {
@@ -757,6 +808,19 @@ font-size: 1.8em;
 margin-bottom: 15px;
 }
 
+.story_title a {  
+color: #1B4986;
+}
+
+.story_title a:hover {
+color: #7698C6;
+}
+
+.blog-post-details {
+    color: #1B4986;
+    font-size: 1.1em;
+}
+
 .uppercase {
 text-transform: uppercase;
 }
@@ -776,6 +840,13 @@ width: 390px;
     font-weight: bold;
     font-size: .8em;
     text-transform: uppercase;
+    padding-top: 5px;
+    display: block;
+}
+
+.story_read_more a:hover {
+    text-decoration: underline;
+    color: #7698C6;
 }
 
 .post-row .staff img {
