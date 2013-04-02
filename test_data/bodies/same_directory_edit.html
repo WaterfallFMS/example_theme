@@ -1,36 +1,54 @@
-
-<form accept-charset="UTF-8" action="/directory_companies/1" class="edit_directory_company" enctype="multipart/form-data" id="edit_directory_company_1" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /></div>
+<form accept-charset="UTF-8" action="/directory_companies/600" class="edit_directory_company" enctype="multipart/form-data" id="edit_directory_company_600" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="put"></div>
 
   <div class="section">
-  <h1>1 Company 2</h1>
+  <h1>4Clicks Solutions</h1>
 
-  <img alt="Logo" src="../images/logo.png" />
+  
 
   <label for="directory_company_logo">Logo</label>
-  <input id="directory_company_logo" name="directory_company[logo]" type="file" />
-  <input id="directory_company_logo_cache" name="directory_company[logo_cache]" type="hidden" />
+  <img alt="Logo" src="../images/logo.png" />
+  <input id="directory_company_logo" name="directory_company[logo]" type="file">
+  <input id="directory_company_logo_cache" name="directory_company[logo_cache]" type="hidden">
+
+  <label for="directory_company_print_logo">Print logo</label>
+  <input id="directory_company_print_logo" name="directory_company[print_logo]" type="file">
+  <input id="directory_company_logo_cache" name="directory_company[logo_cache]" type="hidden">
+
+  <div class="logo-explanation">
+    The logo specs are as follows:
+
+    <ul>
+      <li>Print-Ready Logos - resolution: 300 dpi (minimum)<ul>
+        <li>black and white (color logos will not be accepted)</li>
+        <li>format: JPG, EPS, TIF</li>
+        <li>dimensions: 2" max. width and 0.75" max. height</li>
+      </ul></li>
+      <li>Web-Ready Logos - RGB Only<ul>
+        <li>resolution: 72 dpi</li>
+        <li>color / black and white</li>
+        <li>format: JPG, GIF</li>
+        <li>dimensions: 180 pixels width and 75 pixels height</li>
+      </ul></li>
+    </ul>
+  </div>
 </div>
 
-
+  
 <div class="section">
   <h2>Contact Information</h2>
 
   <div class="left">
     <div>
-      <label for="directory_company_name">Name</label>
-      <input id="directory_company_name" name="directory_company[name]" size="30" type="text" value="1 Company 2" />
-    </div>
-    <div>
       <label for="directory_company_address">Address</label>
-      <input id="directory_company_address" name="directory_company[address]" size="30" type="text" value="1 Main st" />
+      <input id="directory_company_address" name="directory_company[address]" size="30" type="text" value="PO Box 76884">
     </div>
     <div>
       <label for="directory_company_address1">Address 2</label>
-      <input id="directory_company_address1" name="directory_company[address1]" size="30" type="text" value="Suite 600" />
+      <input id="directory_company_address1" name="directory_company[address1]" size="30" type="text" value="">
     </div>
     <div>
       <label for="directory_company_city">City</label>
-      <input id="directory_company_city" name="directory_company[city]" size="30" type="text" value="Greenbelt" />
+      <input id="directory_company_city" name="directory_company[city]" size="30" type="text" value="Colorado Springs">
     </div>
     <div>
       <label for="directory_company_state">State</label>
@@ -40,7 +58,7 @@
 <option value="AR">AR</option>
 <option value="AZ">AZ</option>
 <option value="CA">CA</option>
-<option value="CO">CO</option>
+<option value="CO" selected="selected">CO</option>
 <option value="CT">CT</option>
 <option value="DC">DC</option>
 <option value="DE">DE</option>
@@ -56,7 +74,7 @@
 <option value="KY">KY</option>
 <option value="LA">LA</option>
 <option value="MA">MA</option>
-<option value="MD" selected="selected">MD</option>
+<option value="MD">MD</option>
 <option value="ME">ME</option>
 <option value="MI">MI</option>
 <option value="MN">MN</option>
@@ -91,82 +109,79 @@
     </div>
     <div>
       <label for="directory_company_zip">Zip code</label>
-      <input id="directory_company_zip" name="directory_company[zip]" size="30" type="text" value="20770" />
+      <input id="directory_company_zip" name="directory_company[zip]" size="30" type="text" value="80970">
     </div>
     <div>
       <label for="directory_company_country">Country</label>
-      <input id="directory_company_country" name="directory_company[country]" size="30" type="text" value="USA" />
+      <input id="directory_company_country" name="directory_company[country]" size="30" type="text" value="">
     </div>
   </div>
 
-  <div class='right'>
+  <div class="right">
     <div>
       <label for="directory_company_web_site">URL</label>
-      <input id="directory_company_web_site" name="directory_company[web_site]" size="30" type="text" value="http://google.com" />
+      <input id="directory_company_web_site" name="directory_company[web_site]" size="30" type="text" value="www.4Clicks.com">
     </div>
 
     <div>
       <label for="directory_company_parent_company">Parent company</label>
-      <input id="directory_company_parent_company" name="directory_company[parent_company]" size="30" type="text" value="" />
+      <input id="directory_company_parent_company" name="directory_company[parent_company]" size="30" type="text" value="">
     </div>
 
-
-      <input id="directory_company_directory_company_contacts_attributes_0_contact_type" name="directory_company[directory_company_contacts_attributes][0][contact_type]" type="hidden" value="POC" />
+    
+      <input id="directory_company_directory_company_contacts_attributes_0_contact_type" name="directory_company[directory_company_contacts_attributes][0][contact_type]" type="hidden" value="POC">
 
       <div>
         <label for="directory_company_directory_company_contacts_attributes_0_name">POC Name</label>
-        <input id="directory_company_directory_company_contacts_attributes_0_name" name="directory_company[directory_company_contacts_attributes][0][name]" size="30" type="text" value="John Doe" />
+        <input id="directory_company_directory_company_contacts_attributes_0_name" name="directory_company[directory_company_contacts_attributes][0][name]" size="30" type="text" value="Tom Cassidy">
       </div>
 
       <div>
         <label for="directory_company_directory_company_contacts_attributes_0_email">POC Email</label>
-        <input id="directory_company_directory_company_contacts_attributes_0_email" name="directory_company[directory_company_contacts_attributes][0][email]" size="30" type="text" value="john@doe.com" />
+        <input id="directory_company_directory_company_contacts_attributes_0_email" name="directory_company[directory_company_contacts_attributes][0][email]" size="30" type="text" value="tcassidy@4Clicks.com">
       </div>
 
       <div>
         <label for="directory_company_directory_company_contacts_attributes_0_phone">POC Phone</label>
-        <input id="directory_company_directory_company_contacts_attributes_0_phone" name="directory_company[directory_company_contacts_attributes][0][phone]" size="30" type="text" value="555-555-5555" />
+        <input id="directory_company_directory_company_contacts_attributes_0_phone" name="directory_company[directory_company_contacts_attributes][0][phone]" size="30" type="text" value="307-635-7701">
       </div>
 
-<input id="directory_company_directory_company_contacts_attributes_0_id" name="directory_company[directory_company_contacts_attributes][0][id]" type="hidden" value="17" />
-      <div>
-        <a href="/customers/2/edit">Update login</a>
-      </div>
+<input id="directory_company_directory_company_contacts_attributes_0_id" name="directory_company[directory_company_contacts_attributes][0][id]" type="hidden" value="2089">
   </div>
 </div>
 
   <div class="section">
   <h2>Company Information</h2>
 
-
+  
     <div>
       <label for="directory_company_ownership_type">Ownership Description</label>
-      <select id="directory_company_ownership_type" name="directory_company[ownership_type]"><option value="" selected="selected">Other</option>
+      <select id="directory_company_ownership_type" name="directory_company[ownership_type]"><option value="">Other</option>
 <option value="Employee Owned">Employee Owned</option>
 <option value="Partnership">Partnership</option>
 <option value="Privately Owned">Privately Owned</option>
 <option value="Publicly Traded">Publicly Traded</option>
-<option value="Sole Proprietorship">Sole Proprietorship</option></select>
+<option value="Sole Proprietorship" selected="selected">Sole Proprietorship</option></select>
     </div>
 
-    <div>
+    <div style="display: none;">
       <label for="directory_company_data_ownership_type">Other Ownership</label>
-      <input id="directory_company_data_ownership_type" name="directory_company[data][ownership_type]" size="30" type="text" value="LLC" />
+      <input id="directory_company_data_ownership_type" name="directory_company[data][ownership_type]" size="30" type="text" value="">
     </div>
 
     <div>
       <label for="directory_company_employee_count"># of Employees</label>
-      <input id="directory_company_employee_count" name="directory_company[employee_count]" size="30" type="number" value="1" />
+      <input id="directory_company_employee_count" name="directory_company[employee_count]" size="30" type="number" value="10">
     </div>
 
     <div>
       <label for="directory_company_data_offices_in_us"># of U.S. Offices</label>
-      <input id="directory_company_data_offices_in_us" name="directory_company[data][offices_in_us]" size="30" type="number" value="1" />
+      <input id="directory_company_data_offices_in_us" name="directory_company[data][offices_in_us]" size="30" type="number" value="4">
     </div>
 
     <div>
       <label for="directory_company_data_offices_outside_us"># of Worldwide Offices</label>
-      <input id="directory_company_data_offices_outside_us" name="directory_company[data][offices_outside_us]" size="30" type="number" value="2" />
+      <input id="directory_company_data_offices_outside_us" name="directory_company[data][offices_outside_us]" size="30" type="number" value="0">
     </div>
 </div>
 
@@ -175,205 +190,201 @@
   <h2>Emergency Contact</h2>
 
   <label for="directory_company_phone">24hr Contact Telephone Number</label>
-  <input id="directory_company_phone" name="directory_company[phone]" size="30" type="text" value="555-555-6666" />
+  <input id="directory_company_phone" name="directory_company[phone]" size="30" type="text" value="866-438-4254">
 </div>
   <div class="section">
   <h2>Company Description</h2>
 
-  <textarea cols="40" id="directory_company_description" name="directory_company[description]" rows="20">Just a test company1</textarea>
+  <textarea cols="40" id="directory_company_description" name="directory_company[description]" rows="20">4Clicks Solutions is a veteran-owned small business specializing in the development of construction cost estimating and project management software.  e4Clicks Project Estimator is one of the premier cost estimating programs on the market.  e4Clicks is specifically designed to support the mission of Department of Defense facility owners, contractors, and designers.</textarea>
 
   <div>
-    <span id="description_remaining">100</span> words remaining
+    <span id="description_remaining">48</span> words remaining
   </div>
 </div>
 
 
   <div class="section">
-  <h2>Executive Leadership</h2>
+  <h2>Executive Leadership <span class="max-allowed">(Max of 4)</span></h2>
 
 
-    <div class='section'>
-      <input id="directory_company_directory_company_contacts_attributes_1_contact_type" name="directory_company[directory_company_contacts_attributes][1][contact_type]" type="hidden" value="LEADERSHIP" />
+  
+    <div class="section">
+      <input id="directory_company_directory_company_contacts_attributes_1_contact_type" name="directory_company[directory_company_contacts_attributes][1][contact_type]" type="hidden" value="LEADERSHIP">
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_1_name">Name</label>
-        <input id="directory_company_directory_company_contacts_attributes_1_name" name="directory_company[directory_company_contacts_attributes][1][name]" size="30" type="text" value="1" />
+        <input id="directory_company_directory_company_contacts_attributes_1_name" name="directory_company[directory_company_contacts_attributes][1][name]" size="30" type="text" value="Michael Brown">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_1_title">Title</label>
-        <input id="directory_company_directory_company_contacts_attributes_1_title" name="directory_company[directory_company_contacts_attributes][1][title]" size="30" type="text" value="1" />
+        <input id="directory_company_directory_company_contacts_attributes_1_title" name="directory_company[directory_company_contacts_attributes][1][title]" size="30" type="text" value="President">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_1_email">Email</label>
-        <input id="directory_company_directory_company_contacts_attributes_1_email" name="directory_company[directory_company_contacts_attributes][1][email]" size="30" type="text" value="1@1.xom" />
+        <input id="directory_company_directory_company_contacts_attributes_1_email" name="directory_company[directory_company_contacts_attributes][1][email]" size="30" type="text" value="mbrown@4Clicks.com">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_1_phone">Phone</label>
-        <input id="directory_company_directory_company_contacts_attributes_1_phone" name="directory_company[directory_company_contacts_attributes][1][phone]" size="30" type="text" value="1" />
+        <input id="directory_company_directory_company_contacts_attributes_1_phone" name="directory_company[directory_company_contacts_attributes][1][phone]" size="30" type="text" value="719-574-7721">
       </div>
     </div>
-<input id="directory_company_directory_company_contacts_attributes_1_id" name="directory_company[directory_company_contacts_attributes][1][id]" type="hidden" value="18" />
-    <div class='section'>
-      <input id="directory_company_directory_company_contacts_attributes_2_contact_type" name="directory_company[directory_company_contacts_attributes][2][contact_type]" type="hidden" value="LEADERSHIP" />
+<input id="directory_company_directory_company_contacts_attributes_1_id" name="directory_company[directory_company_contacts_attributes][1][id]" type="hidden" value="2090">
+    <div class="section">
+      <input id="directory_company_directory_company_contacts_attributes_2_contact_type" name="directory_company[directory_company_contacts_attributes][2][contact_type]" type="hidden" value="LEADERSHIP">
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_2_name">Name</label>
-        <input id="directory_company_directory_company_contacts_attributes_2_name" name="directory_company[directory_company_contacts_attributes][2][name]" size="30" type="text" value="2" />
+        <input id="directory_company_directory_company_contacts_attributes_2_name" name="directory_company[directory_company_contacts_attributes][2][name]" size="30" type="text" value="Peter Cholakis">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_2_title">Title</label>
-        <input id="directory_company_directory_company_contacts_attributes_2_title" name="directory_company[directory_company_contacts_attributes][2][title]" size="30" type="text" value="2" />
+        <input id="directory_company_directory_company_contacts_attributes_2_title" name="directory_company[directory_company_contacts_attributes][2][title]" size="30" type="text" value="Chief Marketing Officer">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_2_email">Email</label>
-        <input id="directory_company_directory_company_contacts_attributes_2_email" name="directory_company[directory_company_contacts_attributes][2][email]" size="30" type="text" value="2@2.com" />
+        <input id="directory_company_directory_company_contacts_attributes_2_email" name="directory_company[directory_company_contacts_attributes][2][email]" size="30" type="text" value="pcholakis@4Clicks.com">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_2_phone">Phone</label>
-        <input id="directory_company_directory_company_contacts_attributes_2_phone" name="directory_company[directory_company_contacts_attributes][2][phone]" size="30" type="text" value="2" />
+        <input id="directory_company_directory_company_contacts_attributes_2_phone" name="directory_company[directory_company_contacts_attributes][2][phone]" size="30" type="text" value="508-435-3096">
       </div>
     </div>
-<input id="directory_company_directory_company_contacts_attributes_2_id" name="directory_company[directory_company_contacts_attributes][2][id]" type="hidden" value="19" />
-    <div class='section'>
-      <input id="directory_company_directory_company_contacts_attributes_3_contact_type" name="directory_company[directory_company_contacts_attributes][3][contact_type]" type="hidden" value="LEADERSHIP" />
+<input id="directory_company_directory_company_contacts_attributes_2_id" name="directory_company[directory_company_contacts_attributes][2][id]" type="hidden" value="2091">
+    <div class="section">
+      <input id="directory_company_directory_company_contacts_attributes_3_contact_type" name="directory_company[directory_company_contacts_attributes][3][contact_type]" type="hidden" value="LEADERSHIP">
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_3_name">Name</label>
-        <input id="directory_company_directory_company_contacts_attributes_3_name" name="directory_company[directory_company_contacts_attributes][3][name]" size="30" type="text" value="" />
+        <input id="directory_company_directory_company_contacts_attributes_3_name" name="directory_company[directory_company_contacts_attributes][3][name]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_3_title">Title</label>
-        <input id="directory_company_directory_company_contacts_attributes_3_title" name="directory_company[directory_company_contacts_attributes][3][title]" size="30" type="text" value="" />
+        <input id="directory_company_directory_company_contacts_attributes_3_title" name="directory_company[directory_company_contacts_attributes][3][title]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_3_email">Email</label>
-        <input id="directory_company_directory_company_contacts_attributes_3_email" name="directory_company[directory_company_contacts_attributes][3][email]" size="30" type="text" value="" />
+        <input id="directory_company_directory_company_contacts_attributes_3_email" name="directory_company[directory_company_contacts_attributes][3][email]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_3_phone">Phone</label>
-        <input id="directory_company_directory_company_contacts_attributes_3_phone" name="directory_company[directory_company_contacts_attributes][3][phone]" size="30" type="text" value="" />
+        <input id="directory_company_directory_company_contacts_attributes_3_phone" name="directory_company[directory_company_contacts_attributes][3][phone]" size="30" type="text" value="">
       </div>
     </div>
-<input id="directory_company_directory_company_contacts_attributes_3_id" name="directory_company[directory_company_contacts_attributes][3][id]" type="hidden" value="20" />
-    <div class='section'>
-      <input id="directory_company_directory_company_contacts_attributes_4_contact_type" name="directory_company[directory_company_contacts_attributes][4][contact_type]" type="hidden" value="LEADERSHIP" />
+<input id="directory_company_directory_company_contacts_attributes_3_id" name="directory_company[directory_company_contacts_attributes][3][id]" type="hidden" value="2231">
+    <div class="section">
+      <input id="directory_company_directory_company_contacts_attributes_4_contact_type" name="directory_company[directory_company_contacts_attributes][4][contact_type]" type="hidden" value="LEADERSHIP">
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_4_name">Name</label>
-        <input id="directory_company_directory_company_contacts_attributes_4_name" name="directory_company[directory_company_contacts_attributes][4][name]" size="30" type="text" value="" />
+        <input id="directory_company_directory_company_contacts_attributes_4_name" name="directory_company[directory_company_contacts_attributes][4][name]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_4_title">Title</label>
-        <input id="directory_company_directory_company_contacts_attributes_4_title" name="directory_company[directory_company_contacts_attributes][4][title]" size="30" type="text" value="" />
+        <input id="directory_company_directory_company_contacts_attributes_4_title" name="directory_company[directory_company_contacts_attributes][4][title]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_4_email">Email</label>
-        <input id="directory_company_directory_company_contacts_attributes_4_email" name="directory_company[directory_company_contacts_attributes][4][email]" size="30" type="text" value="" />
+        <input id="directory_company_directory_company_contacts_attributes_4_email" name="directory_company[directory_company_contacts_attributes][4][email]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_4_phone">Phone</label>
-        <input id="directory_company_directory_company_contacts_attributes_4_phone" name="directory_company[directory_company_contacts_attributes][4][phone]" size="30" type="text" value="" />
+        <input id="directory_company_directory_company_contacts_attributes_4_phone" name="directory_company[directory_company_contacts_attributes][4][phone]" size="30" type="text" value="">
       </div>
     </div>
-<input id="directory_company_directory_company_contacts_attributes_4_id" name="directory_company[directory_company_contacts_attributes][4][id]" type="hidden" value="21" /></div>
+<input id="directory_company_directory_company_contacts_attributes_4_id" name="directory_company[directory_company_contacts_attributes][4][id]" type="hidden" value="2232"></div>
 
 <div class="section">
   <h2>Business Development POC</h2>
 
+  
+    <div class="section">
+      <input id="directory_company_directory_company_contacts_attributes_5_contact_type" name="directory_company[directory_company_contacts_attributes][5][contact_type]" type="hidden" value="BUS/DEV">
 
-    <div class='section'>
-      <input id="directory_company_directory_company_contacts_attributes_5_contact_type" name="directory_company[directory_company_contacts_attributes][5][contact_type]" type="hidden" value="BUS/DEV" />
-
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_5_name">Name</label>
-        <input id="directory_company_directory_company_contacts_attributes_5_name" name="directory_company[directory_company_contacts_attributes][5][name]" size="30" type="text" value="3" />
+        <input id="directory_company_directory_company_contacts_attributes_5_name" name="directory_company[directory_company_contacts_attributes][5][name]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_5_title">Title</label>
-        <input id="directory_company_directory_company_contacts_attributes_5_title" name="directory_company[directory_company_contacts_attributes][5][title]" size="30" type="text" value="3" />
+        <input id="directory_company_directory_company_contacts_attributes_5_title" name="directory_company[directory_company_contacts_attributes][5][title]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_5_email">Email</label>
-        <input id="directory_company_directory_company_contacts_attributes_5_email" name="directory_company[directory_company_contacts_attributes][5][email]" size="30" type="text" value="3@3.com" />
+        <input id="directory_company_directory_company_contacts_attributes_5_email" name="directory_company[directory_company_contacts_attributes][5][email]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_5_phone">Phone</label>
-        <input id="directory_company_directory_company_contacts_attributes_5_phone" name="directory_company[directory_company_contacts_attributes][5][phone]" size="30" type="text" value="3" />
+        <input id="directory_company_directory_company_contacts_attributes_5_phone" name="directory_company[directory_company_contacts_attributes][5][phone]" size="30" type="text" value="">
       </div>
     </div>
-<input id="directory_company_directory_company_contacts_attributes_5_id" name="directory_company[directory_company_contacts_attributes][5][id]" type="hidden" value="22" /></div>
+<input id="directory_company_directory_company_contacts_attributes_5_id" name="directory_company[directory_company_contacts_attributes][5][id]" type="hidden" value="2233"></div>
 
 <div class="section">
   <h2>Ad POC</h2>
 
+  
+    <div class="section">
+      <input id="directory_company_directory_company_contacts_attributes_6_contact_type" name="directory_company[directory_company_contacts_attributes][6][contact_type]" type="hidden" value="AD">
 
-    <div class='section'>
-      <input id="directory_company_directory_company_contacts_attributes_6_contact_type" name="directory_company[directory_company_contacts_attributes][6][contact_type]" type="hidden" value="AD" />
-
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_6_name">Name</label>
-        <input id="directory_company_directory_company_contacts_attributes_6_name" name="directory_company[directory_company_contacts_attributes][6][name]" size="30" type="text" value="4" />
+        <input id="directory_company_directory_company_contacts_attributes_6_name" name="directory_company[directory_company_contacts_attributes][6][name]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_6_title">Title</label>
-        <input id="directory_company_directory_company_contacts_attributes_6_title" name="directory_company[directory_company_contacts_attributes][6][title]" size="30" type="text" value="4" />
+        <input id="directory_company_directory_company_contacts_attributes_6_title" name="directory_company[directory_company_contacts_attributes][6][title]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_6_email">Email</label>
-        <input id="directory_company_directory_company_contacts_attributes_6_email" name="directory_company[directory_company_contacts_attributes][6][email]" size="30" type="text" value="4@4.com" />
+        <input id="directory_company_directory_company_contacts_attributes_6_email" name="directory_company[directory_company_contacts_attributes][6][email]" size="30" type="text" value="">
       </div>
 
-      <div class='left'>
+      <div class="left">
         <label for="directory_company_directory_company_contacts_attributes_6_phone">Phone</label>
-        <input id="directory_company_directory_company_contacts_attributes_6_phone" name="directory_company[directory_company_contacts_attributes][6][phone]" size="30" type="text" value="4" />
+        <input id="directory_company_directory_company_contacts_attributes_6_phone" name="directory_company[directory_company_contacts_attributes][6][phone]" size="30" type="text" value="">
       </div>
     </div>
-<input id="directory_company_directory_company_contacts_attributes_6_id" name="directory_company[directory_company_contacts_attributes][6][id]" type="hidden" value="23" /></div>
-
+<input id="directory_company_directory_company_contacts_attributes_6_id" name="directory_company[directory_company_contacts_attributes][6][id]" type="hidden" value="2234"></div>
+  
 <div class="section">
-  <h2>Capabilities</h2>
+  <h2>Capabilities <span class="max-allowed">(Max of 10)</span></h2>
 
   <div id="capabilities_form">
     <div>
-      <input id="" name="directory_company[searchable_fields][capabilities][]" type="hidden" value="Buildings" />
-      <span>Buildings</span>
+      <input id="" name="directory_company[searchable_fields][capabilities][]" type="hidden" value="Aerial Photography">
+      <span>Aerial Photography</span>
       <span class="capabilities_delete_button">Delete</span>
     </div>
     <div>
-      <input id="" name="directory_company[searchable_fields][capabilities][]" type="hidden" value="Dams and Levees" />
-      <span>Dams and Levees</span>
+      <input id="" name="directory_company[searchable_fields][capabilities][]" type="hidden" value="Aerial Photography">
+      <span>Aerial Photography</span>
       <span class="capabilities_delete_button">Delete</span>
     </div>
     <div>
-      <input id="" name="directory_company[searchable_fields][capabilities][]" type="hidden" value="Asbestos" />
-      <span>Asbestos</span>
-      <span class="capabilities_delete_button">Delete</span>
-    </div>
-    <div>
-      <input id="" name="directory_company[searchable_fields][capabilities][]" type="hidden" value="Foo bar" />
-      <span>Foo bar</span>
+      <input id="" name="directory_company[searchable_fields][capabilities][]" type="hidden" value="Aerial Photography">
+      <span>Aerial Photography</span>
       <span class="capabilities_delete_button">Delete</span>
     </div>
   </div>
 
-  <div id="capability_new">
+  <div id="capability_new" style="">
     <select id="capabilities_list" name="capabilities_list"><option value="Aerial Photography">Aerial Photography</option>
 <option value="Airfield Facilities">Airfield Facilities</option>
 <option value="Airfield Infrastructure (e.g. Pavements, utilities)">Airfield Infrastructure (e.g. Pavements, utilities)</option>
@@ -423,43 +434,35 @@
 <option value="Water Treatment">Water Treatment</option>
 <option value="">Other</option>
 <option value="GIS/Mapping">GIS/Mapping</option></select>
-    <input id="capabilities_other" name="capabilities_other" type="text" value="" />
-    <span class='capabilities_add_button'>Add Another</span>
+    <input id="capabilities_other" name="capabilities_other" type="text" value="" style="display: none;">
+    <span class="capabilities_add_button">Add Another</span>
   </div>
 </div>
 
 
 
   <div class="section">
-  <h2>NAICS Codes</h2>
+  <h2>NAICS Codes <span class="max-allowed">(Max of 10)</span></h2>
 
   <div id="naics_codes">
-    <div>
-      <input id="" name="directory_company[searchable_fields][naics][]" type="text" value="4065" />
-      <span class="naics_delete_button">Delete</span>
-    </div>
-    <div>
-      <input id="" name="directory_company[searchable_fields][naics][]" type="text" value="7859" />
-      <span class="naics_delete_button">Delete</span>
-    </div>
   </div>
 
-  <span id="naics_add_button">Add Another</span>
+  <span id="naics_add_button" style="">Add Another</span>
 </div>
 
 
-
+  
 <div class="section">
   <h2>Annual Federal Revenue</h2>
 
-
-    <div class='left'>
+  
+    <div class="left">
       <label for="directory_company_data_professional_services_revenue">Professional services revenue</label>
-      <select id="directory_company_data_professional_services_revenue" name="directory_company[data][professional_services_revenue]"><option value="">N/A</option>
+      <select id="directory_company_data_professional_services_revenue" name="directory_company[data][professional_services_revenue]"><option value="" selected="selected">N/A</option>
 <option value="Less than $100,000">Less than $100,000</option>
 <option value="$100,000 to less than $250,000">$100,000 to less than $250,000</option>
 <option value="$250,000 to less than $500,000">$250,000 to less than $500,000</option>
-<option value="$500,000 to less than $1 million" selected="selected">$500,000 to less than $1 million</option>
+<option value="$500,000 to less than $1 million">$500,000 to less than $1 million</option>
 <option value="$1 million to less than $2 million">$1 million to less than $2 million</option>
 <option value="$2 million to less than $5 million">$2 million to less than $5 million</option>
 <option value="$5 million to less than $10 million">$5 million to less than $10 million</option>
@@ -468,10 +471,10 @@
 <option value="$50 million or greater">$50 million or greater</option></select>
     </div>
 
-    <div class='right'>
+    <div class="right">
       <label for="directory_company_data_construction_revenue">Construction revenue</label>
-      <select id="directory_company_data_construction_revenue" name="directory_company[data][construction_revenue]"><option value="">N/A</option>
-<option value="$0 to less than $5 million" selected="selected">$0 to less than $5 million</option>
+      <select id="directory_company_data_construction_revenue" name="directory_company[data][construction_revenue]"><option value="" selected="selected">N/A</option>
+<option value="$0 to less than $5 million">$0 to less than $5 million</option>
 <option value="$5 million to less than $10 million">$5 million to less than $10 million</option>
 <option value="$10 million to less than $25 million">$10 million to less than $25 million</option>
 <option value="$25 million to less than $50 million">$25 million to less than $50 million</option>
@@ -480,273 +483,249 @@
     </div>
 </div>
 
-
+  
 <div class="section">
   <h2>Federal Small Business Categories</h2>
 
     <div>
-      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Emerging Small Business" />
+      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Emerging Small Business">
       Emerging Small Business
     </div>
     <div>
-      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Small Disadvantaged Business (SDB)" />
+      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Small Disadvantaged Business (SDB)">
       Small Disadvantaged Business (SDB)
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Veteran-Owned" />
+      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Veteran-Owned">
       Veteran-Owned
     </div>
     <div>
-      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Women-Owned" />
+      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Women-Owned">
       Women-Owned
     </div>
     <div>
-      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="8(a) Program" />
+      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="8(a) Program">
       8(a) Program
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Hub-zone" />
+      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Hub-zone">
       Hub-zone
     </div>
     <div>
-      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Disabled Veteran-Owned Business" />
+      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Disabled Veteran-Owned Business">
       Disabled Veteran-Owned Business
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Small Business" />
+      <input id="directory_company_searchable_fields_small_business_categories_" name="directory_company[searchable_fields][small_business_categories][]" type="checkbox" value="Small Business">
       Small Business
     </div>
 </div>
-
+  
 <div class="section">
-  <h2>Emergency Response Capabilities</h2>
+  <h2>Emergency Response Capabilities <span class="max-allowed">(Max of 10)</span></h2>
+  <!-- Todo: make a combo box -->
 
+  <div id="emergency_capabilities_form">
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #1 Transportation" />
-      ESF #1 Transportation
+      <input id="" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="hidden" value="ESF #13 Public Safety &amp; Security">
+      <span>ESF #13 Public Safety &amp; Security</span>
+      <span class="emergency_capabilities_delete_button">Delete</span>
     </div>
     <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #2 Communications" />
-      ESF #2 Communications
+      <input id="" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="hidden" value="ESF #7 Resource Support">
+      <span>ESF #7 Resource Support</span>
+      <span class="emergency_capabilities_delete_button">Delete</span>
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #3 Public Works &amp; Engineering" />
-      ESF #3 Public Works &amp; Engineering
+      <input id="" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="hidden" value="ESF #2 Communications">
+      <span>ESF #2 Communications</span>
+      <span class="emergency_capabilities_delete_button">Delete</span>
     </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #4 Firefighting" />
-      ESF #4 Firefighting
-    </div>
-    <div>
-      <input checked="checked" id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #5 Emergency Management" />
-      ESF #5 Emergency Management
-    </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #6 Mass Care, Housing &amp; Medical Services" />
-      ESF #6 Mass Care, Housing &amp; Medical Services
-    </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #7 Resource Support" />
-      ESF #7 Resource Support
-    </div>
-    <div>
-      <input checked="checked" id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #8 Public Health &amp; Medical Services" />
-      ESF #8 Public Health &amp; Medical Services
-    </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #9 Urban Search &amp; Rescue" />
-      ESF #9 Urban Search &amp; Rescue
-    </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #10 Oil &amp; Hazardous Materials Response" />
-      ESF #10 Oil &amp; Hazardous Materials Response
-    </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #11 Agricultural &amp; Natural Resources" />
-      ESF #11 Agricultural &amp; Natural Resources
-    </div>
-    <div>
-      <input checked="checked" id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #12 Energy" />
-      ESF #12 Energy
-    </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #13 Public Safety &amp; Security" />
-      ESF #13 Public Safety &amp; Security
-    </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #14 Long-Term Community Recovery &amp; Mitigation" />
-      ESF #14 Long-Term Community Recovery &amp; Mitigation
-    </div>
-    <div>
-      <input id="directory_company_searchable_fields_emergency_response_capabilities_" name="directory_company[searchable_fields][emergency_response_capabilities][]" type="checkbox" value="ESF #15 External Affairs" />
-      ESF #15 External Affairs
-    </div>
+  </div>
+
+  <div id="emergency_capability_new" style="">
+    <select id="emergency_capabilities_list" name="emergency_capabilities_list"><option value="ESF #1 Transportation">ESF #1 Transportation</option>
+<option value="ESF #2 Communications">ESF #2 Communications</option>
+<option value="ESF #3 Public Works &amp; Engineering">ESF #3 Public Works &amp; Engineering</option>
+<option value="ESF #4 Firefighting">ESF #4 Firefighting</option>
+<option value="ESF #5 Emergency Management">ESF #5 Emergency Management</option>
+<option value="ESF #6 Mass Care, Housing &amp; Medical Services">ESF #6 Mass Care, Housing &amp; Medical Services</option>
+<option value="ESF #7 Resource Support">ESF #7 Resource Support</option>
+<option value="ESF #8 Public Health &amp; Medical Services">ESF #8 Public Health &amp; Medical Services</option>
+<option value="ESF #9 Urban Search &amp; Rescue">ESF #9 Urban Search &amp; Rescue</option>
+<option value="ESF #10 Oil &amp; Hazardous Materials Response">ESF #10 Oil &amp; Hazardous Materials Response</option>
+<option value="ESF #11 Agricultural &amp; Natural Resources">ESF #11 Agricultural &amp; Natural Resources</option>
+<option value="ESF #12 Energy">ESF #12 Energy</option>
+<option value="ESF #13 Public Safety &amp; Security">ESF #13 Public Safety &amp; Security</option>
+<option value="ESF #14 Long-Term Community Recovery &amp; Mitigation">ESF #14 Long-Term Community Recovery &amp; Mitigation</option>
+<option value="ESF #15 External Affairs">ESF #15 External Affairs</option></select>
+    <span class="emergency_capabilities_add_button">Add Another</span>
+  </div>
 </div>
 
+
+  
 <div class="section">
   <h2>Office Locations</h2>
 
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Africa" />
-      Africa
+      <input checked="checked" id="office_location_united_states" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="United States">
+      <label for="office_location_united_states">United States</label>
+
+        
+<div id="us-office-locations">
+  <input type="checkbox" id="us-office-select-all">
+  <label for="us-office-select-all">Select All</label>
+
+    <input checked="checked" id="us_office_location_alabama" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Alabama">
+    <label for="us_office_location_alabama">Alabama</label>
+    <input checked="checked" id="us_office_location_alaska" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Alaska">
+    <label for="us_office_location_alaska">Alaska</label>
+    <input checked="checked" id="us_office_location_arizona" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Arizona">
+    <label for="us_office_location_arizona">Arizona</label>
+    <input checked="checked" id="us_office_location_arkansas" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Arkansas">
+    <label for="us_office_location_arkansas">Arkansas</label>
+    <input checked="checked" id="us_office_location_california" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="California">
+    <label for="us_office_location_california">California</label>
+    <input checked="checked" id="us_office_location_colorado" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Colorado">
+    <label for="us_office_location_colorado">Colorado</label>
+    <input checked="checked" id="us_office_location_connecticut" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Connecticut">
+    <label for="us_office_location_connecticut">Connecticut</label>
+    <input checked="checked" id="us_office_location_delaware" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Delaware">
+    <label for="us_office_location_delaware">Delaware</label>
+    <input checked="checked" id="us_office_location_florida" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Florida">
+    <label for="us_office_location_florida">Florida</label>
+    <input checked="checked" id="us_office_location_georgia" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Georgia">
+    <label for="us_office_location_georgia">Georgia</label>
+    <input checked="checked" id="us_office_location_hawaii" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Hawaii">
+    <label for="us_office_location_hawaii">Hawaii</label>
+    <input checked="checked" id="us_office_location_idaho" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Idaho">
+    <label for="us_office_location_idaho">Idaho</label>
+    <input checked="checked" id="us_office_location_illinois" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Illinois">
+    <label for="us_office_location_illinois">Illinois</label>
+    <input checked="checked" id="us_office_location_indiana" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Indiana">
+    <label for="us_office_location_indiana">Indiana</label>
+    <input checked="checked" id="us_office_location_iowa" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Iowa">
+    <label for="us_office_location_iowa">Iowa</label>
+    <input checked="checked" id="us_office_location_kansas" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Kansas">
+    <label for="us_office_location_kansas">Kansas</label>
+    <input checked="checked" id="us_office_location_kentucky" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Kentucky">
+    <label for="us_office_location_kentucky">Kentucky</label>
+    <input checked="checked" id="us_office_location_louisiana" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Louisiana">
+    <label for="us_office_location_louisiana">Louisiana</label>
+    <input checked="checked" id="us_office_location_maine" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Maine">
+    <label for="us_office_location_maine">Maine</label>
+    <input checked="checked" id="us_office_location_maryland" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Maryland">
+    <label for="us_office_location_maryland">Maryland</label>
+    <input checked="checked" id="us_office_location_massachusetts" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Massachusetts">
+    <label for="us_office_location_massachusetts">Massachusetts</label>
+    <input checked="checked" id="us_office_location_michigan" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Michigan">
+    <label for="us_office_location_michigan">Michigan</label>
+    <input checked="checked" id="us_office_location_minnesota" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Minnesota">
+    <label for="us_office_location_minnesota">Minnesota</label>
+    <input checked="checked" id="us_office_location_mississippi" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Mississippi">
+    <label for="us_office_location_mississippi">Mississippi</label>
+    <input checked="checked" id="us_office_location_missouri" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Missouri">
+    <label for="us_office_location_missouri">Missouri</label>
+    <input checked="checked" id="us_office_location_montana" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Montana">
+    <label for="us_office_location_montana">Montana</label>
+    <input checked="checked" id="us_office_location_nebraska" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Nebraska">
+    <label for="us_office_location_nebraska">Nebraska</label>
+    <input id="us_office_location_nevada" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Nevada">
+    <label for="us_office_location_nevada">Nevada</label>
+    <input checked="checked" id="us_office_location_new_hampshire" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="New Hampshire">
+    <label for="us_office_location_new_hampshire">New Hampshire</label>
+    <input id="us_office_location_new_jersey" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="New Jersey">
+    <label for="us_office_location_new_jersey">New Jersey</label>
+    <input id="us_office_location_new_mexico" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="New Mexico">
+    <label for="us_office_location_new_mexico">New Mexico</label>
+    <input checked="checked" id="us_office_location_new_york" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="New York">
+    <label for="us_office_location_new_york">New York</label>
+    <input checked="checked" id="us_office_location_north_carolina" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="North Carolina">
+    <label for="us_office_location_north_carolina">North Carolina</label>
+    <input checked="checked" id="us_office_location_north_dakota" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="North Dakota">
+    <label for="us_office_location_north_dakota">North Dakota</label>
+    <input checked="checked" id="us_office_location_ohio" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Ohio">
+    <label for="us_office_location_ohio">Ohio</label>
+    <input checked="checked" id="us_office_location_oklahoma" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Oklahoma">
+    <label for="us_office_location_oklahoma">Oklahoma</label>
+    <input checked="checked" id="us_office_location_oregon" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Oregon">
+    <label for="us_office_location_oregon">Oregon</label>
+    <input checked="checked" id="us_office_location_pennsylvania" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Pennsylvania">
+    <label for="us_office_location_pennsylvania">Pennsylvania</label>
+    <input checked="checked" id="us_office_location_rhode_island" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Rhode Island">
+    <label for="us_office_location_rhode_island">Rhode Island</label>
+    <input checked="checked" id="us_office_location_south_carolina" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="South Carolina">
+    <label for="us_office_location_south_carolina">South Carolina</label>
+    <input checked="checked" id="us_office_location_south_dakota" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="South Dakota">
+    <label for="us_office_location_south_dakota">South Dakota</label>
+    <input checked="checked" id="us_office_location_tennessee" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Tennessee">
+    <label for="us_office_location_tennessee">Tennessee</label>
+    <input checked="checked" id="us_office_location_texas" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Texas">
+    <label for="us_office_location_texas">Texas</label>
+    <input checked="checked" id="us_office_location_utah" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Utah">
+    <label for="us_office_location_utah">Utah</label>
+    <input checked="checked" id="us_office_location_vermont" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Vermont">
+    <label for="us_office_location_vermont">Vermont</label>
+    <input checked="checked" id="us_office_location_virginia" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Virginia">
+    <label for="us_office_location_virginia">Virginia</label>
+    <input checked="checked" id="us_office_location_washington" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Washington">
+    <label for="us_office_location_washington">Washington</label>
+    <input checked="checked" id="us_office_location_west_virginia" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="West Virginia">
+    <label for="us_office_location_west_virginia">West Virginia</label>
+    <input checked="checked" id="us_office_location_wisconsin" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Wisconsin">
+    <label for="us_office_location_wisconsin">Wisconsin</label>
+    <input checked="checked" id="us_office_location_wyoming" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Wyoming">
+    <label for="us_office_location_wyoming">Wyoming</label>
+    <input id="us_office_location_washington_dc" name="directory_company[searchable_fields][us_office_locations][]" type="checkbox" value="Washington DC">
+    <label for="us_office_location_washington_dc">Washington DC</label>
+</div>
+
+
     </div>
     <div>
-      <input id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Australia" />
-      Australia
+      <input id="office_location_north_america_(outside_u.s.)" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="North America (Outside U.S.)">
+      <label for="office_location_north_america__outside_u.s._">North America (Outside U.S.)</label>
+
     </div>
     <div>
-      <input id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Asia" />
-      Asia
+      <input id="office_location_africa" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Africa">
+      <label for="office_location_africa">Africa</label>
+
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="South America" />
-      South America
+      <input id="office_location_australia" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Australia">
+      <label for="office_location_australia">Australia</label>
+
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Europe" />
-      Europe
+      <input checked="checked" id="office_location_asia" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Asia">
+      <label for="office_location_asia">Asia</label>
+
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Central America" />
-      Central America
+      <input id="office_location_south_america" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="South America">
+      <label for="office_location_south_america">South America</label>
+
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="U.S. Territories &amp; Possessions" />
-      U.S. Territories &amp; Possessions
+      <input id="office_location_europe" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Europe">
+      <label for="office_location_europe">Europe</label>
+
     </div>
     <div>
-      <input checked="checked" id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Middle East" />
-      Middle East
+      <input id="office_location_central_america" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Central America">
+      <label for="office_location_central_america">Central America</label>
+
     </div>
     <div>
-      <input id="directory_company_searchable_fields_office_locations_" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="North America (Outside U.S.)" />
-      North America (Outside U.S.)
+      <input id="office_location_middle_east" name="directory_company[searchable_fields][office_locations][]" type="checkbox" value="Middle East">
+      <label for="office_location_middle_east">Middle East</label>
+
     </div>
 </div>
 
-<a href="/directory_companies/1">Cancel</a>
-<input id="directory_company_submit" name="commit" type="submit" value="Publish" />
+<a href="/directory_companies/600">Cancel</a>
+<input id="directory_company_submit" name="commit" type="submit" value="Publish">
 
 </form>
-
-  <script>
-  function check_ownership_type(){
-    var value = $('#directory_company_ownership_type').val();
-
-    if(value == ''){
-      $('#directory_company_data_ownership_type').parent().show();
-    } else {
-      $('#directory_company_data_ownership_type').parent().hide();
-    }
-  }
-
-  jQuery(document).ready(function($){
-    $('#directory_company_ownership_type').change(check_ownership_type);
-
-    check_ownership_type();
-  })
-</script>
-<script>
-  jQuery(document).ready(function($){
-    var max         = 100;
-    var description = $('#directory_company_description');
-    var remaining   = $('#description_remaining');
-
-    function check_description(){
-      var value = description.val().split(' ');
-      var count = max - value.length;
-
-      remaining.html(count);
-      if (count >= 0) {
-        remaining.parent().removeClass('error');
-      } else {
-        remaining.parent().addClass('error');
-      }
-    }
-
-    description.keyup(check_description);
-    check_description();
-  });
-</script>
-
-<div id="capability_example" style='display: none;'>
-  <input id="directory_company_searchable_fields_capabilities_" name="directory_company[searchable_fields][capabilities][]" type="hidden" value="" />
-  <span class='capabilities_value'></span>
-  <span class="capabilities_delete_button">Delete</span>
-</div>
-
-<script>
-  jQuery(document).ready(function($){
-    $('#capabilities_other').hide();
-    $('.capabilities_delete_button').live('click',function(){
-      $(this).parent().remove();
-      check_capability_form_size();
-    });
-    $('#capabilities_list').change(function(){
-      if($(this).val() == ''){
-        $('#capabilities_other').show();
-      } else {
-        $('#capabilities_other').hide();
-      }
-    });
-    $('.capabilities_add_button').click(function(){
-      var value = $('#capabilities_list').val();
-      if(value == ''){
-        value = $('#capabilities_other').val();
-      }
-      if(value == ''){
-        return;
-      }
-
-      var form = $('#capability_example').clone(true).removeAttr('id');
-      form.find('input').removeAttr('id').val(value);
-      form.find('.capabilities_value').html(value);
-      form.show();
-
-      form.appendTo('#capabilities_form');
-      check_capability_form_size();
-    });
-
-    function check_capability_form_size(){
-      var max = 10;
-      var inputs = $('#capabilities_form input').length;
-
-      if(inputs >= max){
-        $('#capability_new').hide();
-      } else {
-        $('#capability_new').show();
-      }
-    }
-    check_capability_form_size();
-  });
-</script>
-<div id="naics_example" style="display:none;">
-  <input id="" name="directory_company[searchable_fields][naics][]" type="text" value="" />
-  <span class="naics_delete_button">Delete</span>
-</div>
-
-<script>
-  jQuery(document).ready(function($){
-    $('.naics_delete_button').live('click',function(){
-      $(this).parent().remove();
-      check_naics_size();
-    });
-
-    $('#naics_add_button').click(function(){
-      $("#naics_example").clone(true).removeAttr('id').show().appendTo('#naics_codes');
-      check_naics_size();
-    });
-
-    function check_naics_size(){
-      var max    = 10;
-      var inputs = $('#naics_codes input').length;
-
-      if(inputs >= max){
-        $('#naics_add_button').hide();
-      } else {
-        $('#naics_add_button').show();
-      }
-    }
-    check_naics_size();
-  });
-</script>
