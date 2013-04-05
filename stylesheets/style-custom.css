@@ -80,24 +80,13 @@ h1.stunning-text-title{
     color: #666666;
 }
 
-@font-face {
-    font-family: 'bebasregular';
-    src: url(fonts/'bebas___.eot');
-    src: url(fonts/'bebas___.eot?#iefix') format('embedded-opentype'),
-         url(fonts/'bebas___.woff') format('woff'),
-         url(fonts/'bebas___.ttf') format('truetype'),
-         url(fonts/'bebas___.svg#bebasregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Font Color
 ================================= */
 body{
-    color: #666666 !important;
+    /*color: #666666 !important;*/
 }
 a{
-    color: #2a84ae;
+    color: #820983;
 }
 .footer-wrapper a{
     color: #ffffff;
@@ -106,7 +95,7 @@ a{
     color: #2a84ae !important;
 }
 a:hover{
-    color: #2a49ae;
+    color: #12B5BB;
 }
 .footer-wrapper a:hover{
     color: #FCFF05;
@@ -124,15 +113,15 @@ h1.gdl-page-title{
     border-bottom: 1px solid #65A2BE !important;
 }
 .gdl-page-caption{
-    color: #9a9a9a;
+    color: #e7e7e7;
 }
 .sidebar-title-color, custom-sidebar-title{
-    color: #ffffff !important;
+    color: #820983 !important;
 }
 div.right-sidebar-wrapper .custom-sidebar.gdl-divider .custom-sidebar-title,
 div.left-sidebar-wrapper .custom-sidebar.gdl-divider .custom-sidebar-title{
-    background-color: #14bbd1 !important;
-    border-top: 1px solid #ded116 !important;
+   /* background-color: #14bbd1 !important;
+    border-top: 1px solid #ded116 !important; */
 }
 
 /* Post/Port Color
@@ -236,7 +225,7 @@ div.footer-wrapper div.custom-sidebar .recent-post-widget-thumbnail {
 .custom-sidebar.gdl-divider div,
 .custom-sidebar.gdl-divider .custom-sidebar-title,
 .custom-sidebar.gdl-divider ul li{
-    border-color: #ececec !important;
+    
 }
 
 /* Table */
@@ -301,6 +290,9 @@ ul.tabs li a.active {
 div.navigation-wrapper, .sf-menu li{
     /* background: url('../images/navigation-shadow.png') repeat-x; */
 }
+
+.sixteen ul#menu-main-menu {margin-left:115px;}
+
 .top-navigation-wrapper{
     color: #3d3d3d !important;
 }
@@ -327,7 +319,7 @@ div.navigation-wrapper, .sf-menu li{
     color: #1c333b !important;
     font-family: arial;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 16px;
     padding: 0px 10px;
     text-decoration: none;
  /* border-right: 1px solid #99b893 !important;
@@ -336,7 +328,7 @@ div.navigation-wrapper, .sf-menu li{
 
 .navigation-wrapper .sf-menu li a{
     color: #1c333b !important;
-    font-family: bebas;
+    font-family: BebasRegular;
     font-size: 19px;
  /* border-right: 1px solid #99b893 !important;
     border-left: 1px solid #097609 !important;  */
@@ -404,7 +396,7 @@ div.search-wrapper input[type="submit"]{
 a.button, button, input[type="submit"], input[type="reset"], input[type="button"],
 a.gdl-button{
     background-color: #f1f1f1;
-    color: #7a7a7a;
+    color: #444444;
     border: 1px solid #dedede}
 
 a.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover,
@@ -446,13 +438,9 @@ div.custom-sidebar .contact-widget-whole textarea,
 span.wpcf7-form-control-wrap input[type="text"],
 span.wpcf7-form-control-wrap input[type="password"],
 span.wpcf7-form-control-wrap textarea{
-    color: #888888;
+    color: #999999;
     background-color: #ffffff;
-    border: 1px solid #cfcfcf;
-
-    -webkit-box-shadow: #ececec 0px 1px 4px inset, #07bdb4 -5px -5px 0px 0px, #07bdb4 5px 5px 0px 0px, #07bdb4 5px 0px 0px 0px, #07bdb4 0px 5px 0px 0px, #07bdb4 5px -5px 0px 0px, #07bdb4 -5px 5px 0px 0px;
-    box-shadow: #ececec 0px 1px 4px inset, #07bdb4 -5px -5px 0px 0px, #07bdb4 5px 5px 0px 0px, #07bdb4 5px 0px 0px 0px, #07bdb4 0px 5px 0px 0px, #07bdb4 5px -5px 0px 0px, #07bdb4 -5px 5px 0px 0px;
-}
+    border: 1px solid #cfcfcf;}
 
 /* Icon Type (dark/light)
    ================================= */
@@ -546,3 +534,48 @@ div.custom-sidebar #searchsubmit { text-indent: -10000px; }
 div.gdl-header-dropcap{ position: relative; }
 div.gdl-header-dropcap-center{ position: absolute; left: 50%; top: 50%; }
 div.gdl-header-dropcap-center img{ margin-top: -50%; margin-left: -50%; display: block; } 
+
+/* Location Search Widget
+   =============================== */
+.location-widget {
+  background: url('../images/location-widget/locations-search-background.png') no-repeat;
+  width:   300px;
+  height:  350px;
+}
+.location-widget .content {
+  padding-top: 84px;
+  margin-left: 40px;
+}
+.location-widget .button {
+  padding-top: 25px;
+  padding-left: 72px;
+}
+button#location-search {
+  background: url('../images/location-widget/locations-search-button.png') no-repeat;
+  width:  157px;
+  height: 41px;
+  border: 0;
+  -moz-box-shadow:    none;
+  -webkit-box-shadow: none;
+  box-shadow:         none;
+}
+
+/* Franchise party form
+   ========================== */
+#franchise-party-form select {
+  float: left;
+  margin-right: 5px;
+  width: 46px;
+}
+#franchise-party-form #day,
+#franchise-party-form #year {
+  width: 58px;
+}
+#franchise-party-form #month {
+  width: 97px;
+}
+#franchise-party-form #party-date,
+#franchise-party-form #party-time,
+#franchise-party-form #party-submit {
+  clear: both;
+}
