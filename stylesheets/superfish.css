@@ -52,6 +52,19 @@ ul.sf-menu li li li.sfHover ul {
 	top:			0;
 }
 
+/* Centerd Menu */
+.menu-wrapper ul.sf-menu {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+.menu-wrapper ul.sf-menu ul li {
+    left: 0%;
+}
+.menu-wrapper ul.sf-menu li {
+    left: -50%;
+}
+
 /*** DEMO SKIN ***/
 .sf-menu {
 	float:			left;
