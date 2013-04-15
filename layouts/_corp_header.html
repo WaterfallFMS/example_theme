@@ -1,9 +1,24 @@
 <!-- programmatically calculate header -->
-<div class="customer-login">
-    <a href="/customers/2">Profile</a> |
-    <a href="/customers/sign_out">Sign out</a>
-      | <a href="{% page_url new-company-request %}" target="blank">Add your company to the directory</a>
-</div>
-<div class="menu">
-  <a href="/directory_companies">Directory</a>
-</div>
+<div id="header">
+  <div class="wrap">
+    <div class="text-reset">
+      <div id="logo">
+      <a href="{% root_url %}"><img src="../images/logo.png" alt="" id="logo-img" /></a>
+      </div>
+      <div id="subtitle"><span class="top" >DIRECTORY OF<br/>MEMBER COMPANIES</span><br/><span class="bottom">Society of American Military Engineers</span></div>
+      <div id="top-nav">
+        <ul>
+          <!-- todo: programmatically calculate links -->
+          <li class="first"><a href="{% root_url %}"><span>Directory Home</span></a></li>
+          <li class="profile"><a href="/customers/2"><span>Profile</span></a></li>
+          <li class="logout"><a href="/customers/sign_out"><span>Sign Out</span></a></li>
+          <li class="add-company"><a href="/pages/new-company-request"><span>Add Company</span></a></li>
+          <li class="last"><a href="{% page_url Contact Us %}"><span>Contact Us</span></a></li>
+        </ul>		
+      </div>  
+   
+      <div class="section"></div>
+
+    </div>
+  </div>
+</div> 

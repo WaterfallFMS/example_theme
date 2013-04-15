@@ -26,8 +26,29 @@
 
   <body>
     {% yield_partial corp_header %}
-    {% yield_flash %}
-    {% yield_page %}
+    {% yield_partial corp_menu %}
+    
+    <div id="main">
+      <div class="wrap">
+        <div class="text-reset">
+          <div id="main-inner">
+            <div class="content">
+              <div class="messages">
+              {% yield_flash %}
+                </div>
+              {% yield_page %}
+            </div>
+
+            <div id="right">
+              {% yield_partial corp_sidebar %}
+            </div>
+            <div class="section"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% yield_partial corp_footer %}
     {% yield_scripts %}
   </body>
 </html>
