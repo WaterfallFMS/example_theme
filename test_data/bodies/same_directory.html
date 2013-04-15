@@ -1,10 +1,28 @@
+<h1>Directory of Member Companies</h1>
+
+<div class="intro-text">
+  <div class="intro-header">Search the SAME Directory of Member Companies and Organizations</div>
+  <p>The Directory of Member Companies and Organizations contains detailed profiles of SAME sustaining member companies that include corporate contact information as well as company size, office locations and key leadership listings. Through this page, you can search the online Directory, request a copy of the printed Directory and create or update your Directory profile.</p>
+  </div>
+
 <div class="search">
   <form>
-    <div>
-      <label for="search">Keywords</label><br>
-      <input id="search" name="search" type="text">
-
-      <select id="searchable_fields_us_office_locations" name="searchable_fields[us_office_locations]"><option value="State">State</option>
+    
+    <div class="basic_search">
+      <div class="dark-blue">
+        <input type="submit" value="Search"></br>
+        <span id="advanced_search">Advanced Search</span>
+      </div>
+    
+      <div class="light-blue">
+        <div class="search-company-name">
+          <label for="search">Company Name</label><br>
+          <input id="search" name="search" type="text">
+        </div>
+     
+        <div class="search-state">
+          <label for="searchable_fields_us_office_locations">State</label><br>
+          <select id="searchable_fields_us_office_locations" name="searchable_fields[us_office_locations]"><option value="State">State</option>
 <option value="Alabama">Alabama</option>
 <option value="Alaska">Alaska</option>
 <option value="Arizona">Arizona</option>
@@ -56,7 +74,11 @@
 <option value="Wisconsin">Wisconsin</option>
 <option value="Wyoming">Wyoming</option>
 <option value="Washington DC">Washington DC</option></select><br>
-      <select id="searchable_fields_capabilities" name="searchable_fields[capabilities]"><option value="">Capabilities</option>
+        </div>
+      
+        <div class="search-capability">
+          <label for="searchable_fields_capabilities">Capability</label><br>
+          <select id="searchable_fields_capabilities" name="searchable_fields[capabilities]"><option value="">Capabilities</option>
 <option value="Aerial Photography">Aerial Photography</option>
 <option value="Airfield Facilities">Airfield Facilities</option>
 <option value="Airfield Infrastructure (e.g. Pavements, utilities)">Airfield Infrastructure (e.g. Pavements, utilities)</option>
@@ -105,7 +127,11 @@
 <option value="Water Resources Planning">Water Resources Planning</option>
 <option value="Water Treatment">Water Treatment</option>
 <option value="GIS/Mapping">GIS/Mapping</option></select><br>
-      <select id="searchable_fields_small_business_categories" name="searchable_fields[small_business_categories]"><option value="">Business Categories</option>
+        </div>
+
+        <div class="search-business-category">
+          <label for="searchable_fields_small_business_categories">Business Category</label><br>
+          <select id="searchable_fields_small_business_categories" name="searchable_fields[small_business_categories]"><option value="">Business Categories</option>
 <option value="Emerging Small Business">Emerging Small Business</option>
 <option value="Small Disadvantaged Business (SDB)">Small Disadvantaged Business (SDB)</option>
 <option value="Veteran-Owned">Veteran-Owned</option>
@@ -114,10 +140,16 @@
 <option value="Hub-zone">Hub-zone</option>
 <option value="Disabled Veteran-Owned Business">Disabled Veteran-Owned Business</option>
 <option value="Small Business">Small Business</option></select>
+        </div>
+      </div>
     </div>
-
+    
+    <div class="section"></div>
+    
     <div class="advanced_search_inputs" style="display: none;">
-      <select id="searchable_fields_emergency_response_capabilities" name="searchable_fields[emergency_response_capabilities]"><option value="">Emergency Response Capabilities</option>
+        <div class="search-response-capability">
+          <label for="searchable_fields_emergency_response_capabilities">Response Capability</label><br>
+          <select id="searchable_fields_emergency_response_capabilities" name="searchable_fields[emergency_response_capabilities]"><option value="">Emergency Response Capabilities</option>
 <option value="ESF #1 Transportation">ESF #1 Transportation</option>
 <option value="ESF #2 Communications">ESF #2 Communications</option>
 <option value="ESF #3 Public Works &amp; Engineering">ESF #3 Public Works &amp; Engineering</option>
@@ -133,18 +165,20 @@
 <option value="ESF #13 Public Safety &amp; Security">ESF #13 Public Safety &amp; Security</option>
 <option value="ESF #14 Long-Term Community Recovery &amp; Mitigation">ESF #14 Long-Term Community Recovery &amp; Mitigation</option>
 <option value="ESF #15 External Affairs">ESF #15 External Affairs</option></select>
-
-      <label for="searchable_fields_naics">NAICS Code</label>
-      <input id="searchable_fields_naics" name="searchable_fields[naics]" type="text">
+        </div>
+      
+        <div class="search-naics-code">
+            <label for="searchable_fields_naics">NAICS Code</label></br>
+            <input id="searchable_fields_naics" name="searchable_fields[naics]" type="text">
+        </div>
     </div>
-
-    <div>
-      <span id="advanced_search">Advanced Search</span>
-      <input type="submit" value="Search">
-    </div>
+      
+    <div class="section"></div>
+    
   </form>
 </div>
 
+<div class="section"></div>
 
 <div class="letter-filter">
   <span class="letter letter-0">
@@ -235,168 +269,194 @@
   </span>
 </div>
 
+<div class="section"></div>
 
-<div>
-  <span style="" class="paginate_per_page">
-    <form accept-charset="UTF-8" action="/directory_companies" id="" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
-      Items per page <select id="" name="per_page"><option value="1">1</option>
-<option value="10">10</option>
-<option value="20" selected="selected">20</option>
-<option value="30">30</option>
-<option value="50">50</option>
-<option value="100">100</option></select>
-</form>  </span>
+<div class="items-per-page">
+    <span style="" class="paginate_per_page">
+      <form accept-charset="UTF-8" action="/directory_companies" id="" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        Items per page <select id="" name="per_page"><option value="1">1</option>
+      <option value="10">10</option>
+      <option value="20" selected="selected">20</option>
+      <option value="30">30</option>
+      <option value="50">50</option>
+      <option value="100">100</option></select>
+      </form>
+    </span>
 </div>
+
+<div class="section"></div>
+
   <div class="red-tier tier">
-  <h2><a href="/directory_companies/600">4Clicks Solutions</a></h2>
-  <span><img alt="Admin-logo" src="../assets/admin-logo.png"></span>
-
-  <a href="www.4Clicks.com">www.4Clicks.com</a><br>
-  PO Box 76884<br><br>Colorado Springs, CO, 80970<br>
-
-  4Clicks Solutions is a vete...
-</div>
+    <span><img alt="4Clicks-logo" src="../assets/4clicks-tier-logo.jpg"></span>
+    <div class="red-tier-address">PO Box 76884<br>Colorado Springs, CO 80970</div>
+    <h2><a href="/directory_companies/600">4Clicks Solutions</a></h2>
+    <a href="www.4Clicks.com">www.4Clicks.com</a><br>
+    <div class="tier-teaser"> 4Clicks Solutions is lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam mi, cursus sagittis sollicitudin nisl. Vestibulum quis ligula ante, a euismod ipsum...</div>
+    <div class="section"></div>
+  </div>
+    
   <div class="red-tier tier">
-  <h2><a href="/directory_companies/601">4Granite Inc.</a></h2>
-  <span><img alt="Admin-logo" src="../assets/admin-logo.png"></span>
-
-  <a href="www.4graniteinc.com">www.4graniteinc.com</a><br>
-  P.O. 1564<br><br>Apple Valley, CA, 92307<br>
-
-  4Granite Inc is a Service D...
+   <span><img alt="4Granite-logo" src="../assets/4granite-tier-logo.jpg"></span>
+   <div class="red-tier-address">P.O. 1564<br>Apple Valley, CA 92307</div>
+   <h2><a href="/directory_companies/601">4Granite Inc.</a></h2>
+   <a href="www.4graniteinc.com">www.4graniteinc.com</a><br>
+   <div class="tier-teaser">4Granite Inc is a service consectetur adipiscing elit. Proin quam mi, cursus sagittis sollicitudin nisl. Vestibulum quis ligul...</div>
+   <div class="section"></div>
 </div>
+
   <div class="white-tier tier">
-  <h2><a href="/directory_companies/602">5H Technologies, Inc.</a></h2>
-  <span></span>
-
-  <a href="www.5htech.com">www.5htech.com</a><br>
-  110 South 3rd Street<br><br>Paducah, KY, 42001<br>
-
-  5H Technologies, Inc. is an...
+    <span><img alt="5H-logo" src="../assets/5H-tier-logo.jpg"></span>
+    <div class="white-tier-address">110 South 3rd Street<br>Paducah, KY 42001</div>
+    <h2><a href="/directory_companies/602">5H Technologies, Inc.</a></h2>
+    <a href="www.5htech.com">www.5htech.com</a><br>
+    <div class="tier-teaser">5H Technologies, Inc. is an consectetur adipiscing elit. Proin quam mi, cursus sagittis sollicitudin nisl. Vestibulum quis ligul...</div>
+    <div class="section"></div>
 </div>
-  <div class="white-tier tier">
-  <h2><a href="/directory_companies/606">Aarcher, Inc.</a></h2>
-  <span></span>
 
-  <br>
-  910 Commerce Road<br><br>Annapolis, MD, 21401<br>
-
-  Aarcher is a national small...
+<div class="white-tier tier">
+   <span><img alt="Aarcher-logo" src="../assets/aarcher-tier-logo.jpg"></span>
+   <div class="white-tier-address">  910 Commerce Road<br>Annapolis, MD 21401</div>
+   <h2><a href="/directory_companies/606">Aarcher, Inc.</a></h2>
+   <a href="www.aarcherinc.com">www.aarcherinc..com</a><br>
+   <div class="tier-teaser">Aarcher is a national small is an consectetur adipiscing elit. Proin quam mi, cursus sagittis sollicitudin nisl. Vestibulum quis ligul...</div>
+   <div class="section"></div>
 </div>
+
+
+  <div class="blue-tier tier odd">
+   <h2><a href="/directory_companies/607">Abrams Group Construction, LLC</a></h2>
+   <a href="www.abramsgroupllc.com">www.abramsgroupllc.com</a><br>
+   <div class="blue-tier-address">3645 Highway 90<br>Pace, FL 32571</div>
+   <div class="tier-teaser">Service Disabled Veteran small is an consectetur elit. Proin quam mi, cursus sagittis sollicitudin...</div>
+   <div class="section"></div>
+</div>
+
   <div class="blue-tier tier">
-  <h3><a href="/directory_companies/607">Abrams Group Construction, LLC</a></h3>
-
-  <a href="www.abramsgroupllc.com">www.abramsgroupllc.com</a><br>
-  3645 Highway 90<br><br>Pace, FL, 32571<br>
-
-  Service Disabled Veteran Ow...
+   <h2><a href="/directory_companies/608">Absher Construction Company</a></h2>
+   <a href="www.AbsherNW.com">www.AbsherNW.com</a><br>
+   <div class="blue-tier-address">1001 Shaw Road<br>Puyallup, WA 98372</div>
+   <div class="tier-teaser">Founded in 1940, Absher is an consectetur adipiscing elit. Proin quam mi, cursus sagittis sollicitudin...</div>
+   <div class="section"></div>
 </div>
-  <div class="blue-tier tier">
-  <h3><a href="/directory_companies/608">Absher Construction Company</a></h3>
 
-  <a href="www.AbsherNW.com">www.AbsherNW.com</a><br>
-  1001 Shaw Road<br><br>Puyallup, WA, 98372<br>
+<div class="section"></div>
 
-  Founded in 1940, Absher is ...
-</div>
+  <div class="standard-with-logo-tier tier odd">
+    <div class="right">
+      <h2><a href="/directory_companies/609">Accura Engineering and Consulting Services, Inc.</a></h2>
+      <a href="www.accuraengineering.com">www.accuraengineering.com</a><br>
+      <div class="standard-with-logo-tier-address">3342 International Park Drive<br>Atlanta, GA 30316</div>
+    </div>
+    <span><img alt="Accura-logo" src="../assets/accura-tier-logo.jpg"></span>
+    <div class="section"></div>
+  </div>
+  
   <div class="standard-with-logo-tier tier">
-  <h3><a href="/directory_companies/609">Accura Engineering and Consulting Services, Inc.</a></h3>
-  <span></span>
+    <div class="right">
+      <h2><a href="/directory_companies/610">Ace Electric, Inc</a></h2>
+      <a href="www.aceelectric.net">www.aceelectric.net</a><br>
+      <div class="standard-with-logo-tier-address">4081 Inner Perimeter Rd<br>Valdosta, GA 31602</div>
+    </div>
+    <span><img alt="Ace-logo" src="../assets/ace-tier-logo.jpg"></span><div class="section"></div>
+    <div class="section"></div>
+  </div>
+ 
+<div class="section"></div>
 
-  <a href="www.accuraengineering.com">www.accuraengineering.com</a><br>
-  3342 International Park Drive<br><br>Atlanta, GA, 30316<br>
-</div>
-  <div class="standard-with-logo-tier tier">
-  <h3><a href="/directory_companies/610">Ace Electric, Inc</a></h3>
-  <span></span>
-
-  <a href="www.aceelectric.net">www.aceelectric.net</a><br>
-  4081 Inner Perimeter Rd<br><br>Valdosta, GA, 31602<br>
-</div>
-  <div class="standard-tier tier">
+ <div class="standard-tier tier">
   <h4><a href="/directory_companies/611">ADB Airfield Solutions, LLC</a></h4>
   <a href="www.adb-airfield.com">www.adb-airfield.com</a><br>
-  977 Gahanna Parkway<br><br>Columbus, OH, 43230<br>
+  <div class="standard-tier-address">977 Gahanna Parkway, Columbus, OH, 43230</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/612">ADC Engineering, Inc</a></h4>
   <a href="www.adcengineering.com">www.adcengineering.com</a><br>
-  1226 Yeamans Hall Road<br><br>Hanahan, SC, 29410<br>
+  <div class="standard-tier-address">1226 Yeamans Hall Road, Hanahan, SC 29410</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/604">A.D. Marble &amp; Company</a></h4>
   <a href="www.admarble.com">www.admarble.com</a><br>
-  375 E. Elm Street<br>Suite 101<br>Conshohocken, PA, 19428<br>
+  <div class="standard-tier-address">375 E. Elm Street, Suite 101,Conshohocken, PA 19428</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/613">Advanced Engineering Consultants</a></h4>
   <a href="www.aecmep.com">www.aecmep.com</a><br>
-  1310 Dublin Road<br><br>Columbus, OH, 43215<br>
+  <div class="standard-tier-address">1310 Dublin Road, Columbus, OH 43215</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/614">Advanced Integration Group, Inc.</a></h4>
   <a href="advancedintegrationgroup.net">advancedintegrationgroup.net</a><br>
-  1 McCormick Road<br>Suite A<br>McKees Rocks, PA, 15136<br>
+  <div class="standard-tier-address">1 McCormick Road, Suite A, McKees Rocks, PA 15136</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/615">Advancia Corp.</a></h4>
   <a href="www.advancia.com">www.advancia.com</a><br>
-  655 Research Parkway<br>Ste. 400<br>Oklahoma City, OK, 73104<br>
+  <div class="standard-tier-address">655 Research Parkway, Ste. 400, Oklahoma City, OK 73104</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/616">ADVENT Environmental, Inc.</a></h4>
   <a href="www.adventenv.com">www.adventenv.com</a><br>
-  498 Wando Park Blvd<br>Suite 500<br>Mt. Pleasant, SC, 29464<br>
+  <div class="standard-tier-address">498 Wando Park Blvd, Suite 500, Mt. Pleasant, SC 29464</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/617">Adventus Europe GmbH</a></h4>
   <a href="www.adventus.eu">www.adventus.eu</a><br>
-  Duisburger Str. 69-73<br><br>Oberhausen, , 46049<br>Germany
+  <div class="standard-tier-address">Duisburger Str. 69-73, Oberhausen 46049, Germany</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/619">AECOM</a></h4>
   <a href="www.aecom.com">www.aecom.com</a><br>
-  555 South Flower Street<br>Suite 3700<br>Los Angeles, CA, 90071-2300<br>
+  <div class="standard-tier-address">555 South Flower Street, Suite 3700, Los Angeles, CA 90071-2300</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/620">AEEC, LC</a></h4>
   <a href="www.americanconsultants.com">www.americanconsultants.com</a><br>
-  3489 W 2100 S,<br>Suite 150<br>Salt Lake City, UT, 84119<br>
+  <div class="standard-tier-address">3489 W 2100 S, Suite 150, Salt Lake City, UT 84119</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/621">AEI Engineering, LLC</a></h4>
   <a href="aeiengr.com">aeiengr.com</a><br>
-  616 FM 1960 W<br>Suite 250<br>Houston, TX, 77090<br>
+  <div class="standard-tier-address">616 FM 1960 W, Suite 250, Houston, TX 77090</div>
 </div>
   <div class="standard-tier tier">
   <h4><a href="/directory_companies/622">Aerial Data Service Inc.</a></h4>
   <a href="www.aerialdata.com">www.aerialdata.com</a><br>
-  8301 E 51st St<br>Ste 100<br>Tulsa, OK, 74145-9046<br>
-</div>
-<div>
-  <span style="" class="paginate_per_page">
-    <form accept-charset="UTF-8" action="/directory_companies" id="" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
-      Items per page <select id="" name="per_page"><option value="1">1</option>
-<option value="10">10</option>
-<option value="20" selected="selected">20</option>
-<option value="30">30</option>
-<option value="50">50</option>
-<option value="100">100</option></select>
-</form>  </span>
+  <div class="standard-tier-address">8301 E 51st St, Ste 100, Tulsa, OK 74145-9046</div>
 </div>
 
-<div class="pagination"><span class="previous_page disabled">← Previous</span> <em class="current">1</em> <a rel="next" href="/directory_companies?page=2&amp;per_page=20&amp;utf8=%E2%9C%93">2</a> <a href="/directory_companies?page=3&amp;per_page=20&amp;utf8=%E2%9C%93">3</a> <a class="next_page" rel="next" href="/directory_companies?page=2&amp;per_page=20&amp;utf8=%E2%9C%93">Next →</a></div>
+<div class="page-bottom">
+      <div class="items-per-page">
+      <span style="" class="paginate_per_page">
+      <form accept-charset="UTF-8" action="/directory_companies" id="" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+        Items per page <select id="" name="per_page"><option value="1">1</option>
+      <option value="10" selected="selected">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="50">50</option>
+      <option value="100">100</option></select>
+      </form>
+   </span>
+</div>
+
+<div class="pagination">
+  <span class="previous_page disabled">← Previous</span> <em class="current">1</em> <a rel="next" href="/directory_companies?page=2">2</a> <a href="/directory_companies?page=3">3</a> <a href="/directory_companies?page=4">4</a> <a href="/directory_companies?page=5">5</a> <a class="next_page" rel="next" href="/directory_companies?page=2">Next →</a></div>
+</div>
+
+<div class="section"></div>
 
 
-    <script>
+
+<script>
   jQuery(document).ready(function($){
     $('#advanced_search').click(function(){
-      $('.advanced_search_inputs').toggle().find('select').val('').parent().find('input').val('');
+      //$('.advanced_search_inputs').toggle().find('select').val('').parent().find('input').val('');
+      $('.advanced_search_inputs').slideToggle();
     });
 
-      $('#advanced_search').click();
+     //$('#advanced_search').click();
   });
 </script>
+
 <script>
   jQuery(document).ready(function($){
     $('.paginate_per_page').show();
