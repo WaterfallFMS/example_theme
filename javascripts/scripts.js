@@ -27,6 +27,23 @@ jQuery(document).ready(function($) {
     animation: {opacity:'show'},
     autoArrows: false,
     speed: 'fast'
-  }); 
-      
-}); 
+  });
+
+  // rotating sliders
+  $('#slide-image').append($('#slider-content img'));
+  $('#text-box-inner').append($('#slider-content p'));
+  jQuery('#slide-image').cycle({
+    fx: 'fade',
+    pause: 1,
+    prev: '.left-btn',
+    next: '.right-btn',
+    timeout: 4000
+  });
+  jQuery('#text-box-inner').cycle({
+    fx: 'fade',
+    pause: 1,
+    prev: '.left-btn',
+    next: '.right-btn',
+    timeout: 4000
+  });
+});
