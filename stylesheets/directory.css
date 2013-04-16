@@ -17,6 +17,28 @@ p {
   font-size: 12px;
   font-family: arial; }
 
+  
+/* Global Styles */
+
+a, a:link { color: #3f8aca; text-decoration: none; }
+a img { text-decoration: none; border: none; }
+a:hover { color: #2a6aa1; text-decoration: none; }
+
+a.doc { background: url('../images/icons/doc.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.txt { background: url('../images/icons/txt.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.xls { background: url('../images/icons/xls.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.rss { background: url('../images/icons/feed.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.pps { background: url('../images/icons/pps.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.pdf { background: url('../images/icons/pdf.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.zip { background: url('../images/icons/archive.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.swf { background: url('../images/icons/swf.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.image { background: url('../images/icons/pic.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.video { background: url('../images/icons/film.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.audio { background: url('../images/icons/audio.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
+a.email { background: url('../images/icons/mailto.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }  
+
+
+
 h1 {
   color: #1a488a;
   margin: 0 0 10px 0;
@@ -210,6 +232,7 @@ line-height: 19px; }
 #nav ul li.first {  border-left: 1px solid #e07f96; }
 
 #nav ul li a span{ display: block; padding: 10px 19px; }
+#nav ul li.last a span{ display: block; padding: 10px 14px; }
 
 /*  Secondary    */
 #nav ul li ul {  position: absolute; background-color: #d6204d; width: 200px; margin: 0; padding: 0; left: -999em;  z-index: 999; }
@@ -494,7 +517,7 @@ line-height: 19px; }
   border: 1px solid #cfd0d0;
   padding: 3px 6px;   }
 
-.letter-filter span.letter-all a { padding: 3px 16px;  }
+.letter-filter span.letter-all a { padding: 3px 14px;  }
 
 .letter-filter span.letter a:hover { 
   background-color: #CE2748;
