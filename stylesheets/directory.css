@@ -548,11 +548,13 @@ line-height: 19px; }
 .red-tier img, .white-tier img {  
   border: 1px solid #c5cedd;
   margin-right: 15px;
-  float: left;  }
+  float: left;
+  width: 147px;  }
 
 .standard-with-logo-tier img {  
   border: 1px solid #cacaca;
-  margin-bottom: 7px;  }
+  margin-bottom: 7px;
+  width: 147px;  }
   
 .red-tier-address, .white-tier-address { 
   color: #666666;
@@ -715,11 +717,17 @@ line-height: 19px; }
 
 .company-info {  margin-top: 10px; }
 .company-info h1 {  border: none; padding-bottom: 0; }
+
+.company-info .web-site {
+  float: left;
+  text-align: left; }
+
 .company-info img {  
   border: 1px solid #aeaeae;
   float: left; 
   margin-right: 20px;
-  margin-top:5px;  }
+  margin-top:5px;
+  width: 200px;  }
 
 .company-info .web-site a, 
 .company-info .profile-buttons a { 
