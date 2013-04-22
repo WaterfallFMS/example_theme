@@ -549,12 +549,13 @@ line-height: 19px; }
   border: 1px solid #c5cedd;
   margin-right: 15px;
   float: left;
-  width: 147px;  }
+  max-width: 147px; 
+  max-height: 88px;  }
 
 .standard-with-logo-tier img {  
   border: 1px solid #cacaca;
   margin-bottom: 7px;
-  width: 147px;  }
+  max-width: 147px;  }
   
 .red-tier-address, .white-tier-address { 
   color: #666666;
@@ -751,7 +752,7 @@ line-height: 19px; }
   font-family: arial;
   margin-bottom: 10px;  }
   
-.poc h2 span, .company-description h2 span, .executive-leadership h2 span, .capabilities h2 span, .emergency-capabilities h2 span, .naics-codes h2 span, .small-business-categories h2 span, .federal-revenue h2 span, .office-locations h2 span, .summary-notes h2 span, .company-info .emergency-phone span, .poc span, .executive-leadership .name span { color: #777777; }
+.poc h2 span, .company-description h2 span, .executive-leadership h2 span, .capabilities h2 span, .emergency-capabilities h2 span, .naics-codes h2 span, .small-business-categories h2 span, .federal-revenue h2 span, .office-locations h2 span, .summary-notes h2 span, .company-info .emergency-phone span, .poc span, .executive-leadership .name span, .federal-revenue-profile h2 span { color: #777777; }
 
 .poc,
 .summary-notes,
@@ -766,13 +767,13 @@ line-height: 19px; }
   margin-right: 13px; 
   min-height: 85px; }
 
-.poc h2, .company-description h2, .executive-leadership h2, .capabilities h2, .emergency-capabilities h2, .naics-codes h2, .small-business-categories h2, .federal-revenue h2, .office-locations h2, .summary-notes h2 { 
+.poc h2, .company-description h2, .executive-leadership h2, .capabilities h2, .emergency-capabilities h2, .naics-codes h2, .small-business-categories h2, .federal-revenue h2, .office-locations h2, .summary-notes h2, .federal-revenue-profile h2 { 
   font-size: 18px;
   border-bottom: 7px solid #EEEEEE; 
   padding-bottom: 5px;  }
 
 
-.summary-notes ul li, .capabilities ul li, .emergency-capabilities ul li, .federal-revenue ul li {
+.summary-notes ul li, .capabilities ul li, .emergency-capabilities ul li, .federal-revenue ul li, .federal-revenue-profile ul li {
   background: url("../images/grey-bullet-icon.png") no-repeat scroll 1px 6px transparent;
   color: #19488a;
   font-size: 12px;
@@ -892,7 +893,6 @@ line-height: 19px; }
 .business-poc h2,
 .ad-poc h2,
 .federal-revenue h2,
-.emergency-capabilities h2,
 .fed-small-business-categories h2,
 .company-information h2 { 
   font-size: 18px;
@@ -909,6 +909,15 @@ line-height: 19px; }
   font-family: arial;
   line-height: 2.6em; 
   text-align: right;  } 
+
+.federal-revenue-profile { 
+  width: 340px;
+  margin-right: 13px;
+  color: #777777;
+  font-size: 12px;
+  font-family: arial;
+  line-height: 2.6em; 
+  } 
 
 .fed-small-business-categories .left, .fed-small-business-categories .right, .international-locations .left, .international-locations .right { 
   float: left;
@@ -1005,7 +1014,8 @@ line-height: 19px; }
   
 .office-locations #us-office-locations {  
   background-color: #eeeeee;
-  padding: 15px;  }
+  padding: 15px;
+  margin-bottom: 10px;  }
 
 .office-locations label {
   color: #777777;
@@ -1015,7 +1025,6 @@ line-height: 19px; }
   text-transform: uppercase;  }
 
 .office-locations .state-col { float:left; margin-right: 15px; }
-.office-locations .international-locations { margin: 25px 0 25px 0; }
   
 .bottom-buttons { margin-top: 35px; }
   
