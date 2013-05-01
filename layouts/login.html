@@ -1,11 +1,54 @@
+<!DOCTYPE html>
 <html>
   <head>
-    {% yield_partial head %}
+    <meta name="author" content="Waterfall Software, Inc., waterfallfms.com" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="index, follow" />
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <title>Society of American Military Engineers</title>
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/calendar.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/map.css">
+    <link href="../stylesheets/directory.css" rel="stylesheet" type="text/css" />
+
+    {% default_js %}
+
+      <!--[if lte IE 6]>
+        <script defer src="../javascripts/ie.js" type="text/javascript"></script>
+      <![endif]-->
+
+    {% seo_tags %}
+    {% analytics_tag %}
+    {% yield_head %}
+
+    {% yield_content Dev Head - Directory %}
   </head>
+
   <body>
     {% yield_partial corp_header %}
-    {% yield_flash %}
-    {% yield_page %}
+    {% yield_partial corp_menu %}
+    
+    <div id="main">
+      <div class="wrap">
+        <div class="text-reset">
+          <div id="main-inner">
+            <div class="content">
+              <div class="messages">
+              {% yield_flash %}
+                </div>
+              {% yield_page %}
+            </div>
+
+            <div id="right">
+              {% yield_partial corp_sidebar %}
+            </div>
+            <div class="section"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% yield_partial corp_footer %}
     {% yield_scripts %}
   </body>
 </html>

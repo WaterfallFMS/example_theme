@@ -517,7 +517,7 @@ line-height: 19px; }
   border: 1px solid #cfd0d0;
   padding: 3px 6px;   }
 
-.letter-filter span.letter-all a { padding: 3px 14px;  }
+.letter-filter span.letter-all a { padding: 3px 10px;  }
 
 .letter-filter span.letter a:hover { 
   background-color: #CE2748;
