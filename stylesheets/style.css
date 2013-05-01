@@ -449,7 +449,7 @@ color: #7698C6;
 }
 #slideshow #text-box {
   position: absolute; 
-  z-index: 50;
+  z-index: 1000; /* to fix issues with customers having more then 50 slides */
   width: 578px;
   height: auto;
   bottom: 0px;
@@ -484,7 +484,7 @@ color: #eeeeee;
 
 .slideshow-controls-bottom {
   position: absolute;
-  z-index: 51;
+  z-index: 1001; /* to fix issues with customers having more then 50 slides */
   right: 5px;
   bottom: 0px;
   width: 95px;
@@ -940,7 +940,6 @@ float: left;
 color: #C2C2C2;
 float: left;
 font-family: arial,verdana,sans-serif;
-font-size: 30px;
 line-height: 28px;
 padding-left: 10px;
 padding-top: 18px;
@@ -949,6 +948,13 @@ padding-top: 18px;
 #header #subtitle .top {
 font-family: georgia, times, serif;
 font-weight: bold;
+font-size: 30px;
+}
+
+#header #subtitle .bottom {
+font-family: georgia, times, serif;
+font-weight: bold;
+font-size: 16px;
 }
 
 
