@@ -623,6 +623,8 @@ line-height: 19px; }
   font-size: 12px;
   text-decoration: none; }
   
+.white-tier .tier-teaser, .red-tier .tier-teaser { margin-left: 164px; }
+  
 .tier-teaser { 
   color: #777777;
   font-family: arial;
