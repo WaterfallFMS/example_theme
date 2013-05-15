@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
     var values = $(this).text().split(' ');
     var first = values.shift();
     var rest = values.join(' ');
-    $(this).html("<span class='first'>"+first+"</span><span class='second'>"+rest+"</span>");
+    $(this).html("<span class='first'>"+first+"</span> <span class='second'>"+rest+"</span>");
   });
   
   $('.first_story .story_title a').each(function(){

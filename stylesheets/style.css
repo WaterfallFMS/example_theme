@@ -66,12 +66,16 @@ h2 {
 
 h3 {
   margin: 0 0 5px 0;
-	color: #333;
+	color: #797979;
 	font-size: 1.5em;
   font-family: Impact, "nimbus-sans-condensed", arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
+}
+
+h3 a, h3 a:hover  {
+	color: #797979;
 }
 
 h4 {
@@ -331,6 +335,7 @@ text-decoration: none;
 clear: both;
 margin-bottom: 15px;
 float:left;
+width: 100%;
 }
 
 #meetings_block .meeting_field_item {

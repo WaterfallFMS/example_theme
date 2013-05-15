@@ -3,7 +3,7 @@ MEETING_COUNT = 5;
 jQuery(document).ready(function($){
   $('#meetings').html('Loading...');
 
-  var path = (window.location.pathname).split("/").slice(0,3)
+  var path = (window.location.pathname).split("/").slice(0,3);
   path.push('events');
   path = path.join('/');
 
@@ -15,10 +15,13 @@ jQuery(document).ready(function($){
   $.ajax(path+".json",{
     success: function(data){
       $("#meetings").html('');
+      
+      if(data.length == 0) { $("#meetings").html('There are no meetings/events at this time'); }
+      
       $.each(data, function(index,value){
         if(displayedEvents >= MEETING_COUNT){ return; }
 
-        var start = new Date(value.start)
+        var start = new Date(value.start);
         if(start < today){ return; }
 
         start = start.toDateString().split(' ');
@@ -35,7 +38,7 @@ jQuery(document).ready(function($){
       });
     },
     error: function(){
-      $("#meetings").html('');
+      $("#meetings").html('There are no meetings/events at this time');
     }
   });
 });
