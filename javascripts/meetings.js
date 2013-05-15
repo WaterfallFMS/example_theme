@@ -16,8 +16,6 @@ jQuery(document).ready(function($){
     success: function(data){
       $("#meetings").html('');
       
-      if(data.length == 0) { $("#meetings").html('There are no meetings/events at this time'); }
-      
       $.each(data, function(index,value){
         if(displayedEvents >= MEETING_COUNT){ return; }
 
@@ -36,6 +34,8 @@ jQuery(document).ready(function($){
         $("#meetings").append(event);
         displayedEvents += 1;
       });
+      
+      if(displayedEvents == 0) {$("#meetings").html('There are no meetings/events at this time');}
     },
     error: function(){
       $("#meetings").html('There are no meetings/events at this time');
