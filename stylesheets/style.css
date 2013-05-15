@@ -526,7 +526,7 @@ background: url('../images/hero_arrow_next.png') no-repeat center center #dc264e
 
 
 #call_out_arrow_area {
-    background: url("/themes/same/images/middle_section_bg.jpg") no-repeat scroll left top transparent;
+    background: url("../images/middle_section_bg.jpg") no-repeat scroll left top transparent;
     height: 95px;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -564,7 +564,7 @@ text-transform: uppercase;
 
 
 #join_box .right {
-background: url("/themes/same/images/white-arrow.png") no-repeat scroll right center transparent;
+background: url("../images/white-arrow.png") no-repeat scroll right center transparent;
 float: left;
 padding-right: 29px;
 padding-top: 10px;
