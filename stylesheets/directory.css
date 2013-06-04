@@ -851,7 +851,14 @@ line-height: 19px; }
 /*    Profile Edit  Page    */
 
 
-.edit_directory_company input, .edit_directory_company select, .edit_directory_company textarea {
+.edit_directory_company input, 
+.edit_directory_company select, 
+.edit_directory_company textarea, 
+.contact-us input, 
+.contact-us textarea,
+.add-company-body input,
+.add-company-body textarea,
+.sign-in-content input {
   color: #19488A; }
 
 .company-info-logo label { color: #777777; }
@@ -915,7 +922,15 @@ line-height: 19px; }
   text-align: left; 
   margin-top: 35px;  }
   
-.contact-information .left, .contact-information .right, .company-information, .emergency-contact, .executive-leadership .left, .executive-leadership .right, .business-poc, .ad-poc, .federal-revenue { 
+.contact-information .left, 
+.contact-information .right, 
+.company-information, 
+.emergency-contact, 
+.executive-leadership .left, 
+.executive-leadership .right, 
+.business-poc, 
+.ad-poc, 
+.federal-revenue { 
   width: 340px;
   margin-right: 13px;
   color: #777777;
@@ -933,6 +948,44 @@ line-height: 19px; }
   line-height: 2.6em; 
   } 
 
+.contact-us, .add-company-body, .sign-in-content, .create-new-account .login-info, .create-new-account .billing-info, .create-new-account .shipping-info { 
+  color: #777777;
+  font-size: 12px;
+  font-family: arial;
+  line-height: 1.8em; 
+  text-transform: uppercase; 
+ }
+
+.create-new-account .login-info .login-password,
+.create-new-account .billing-info .billing-info-first,
+.create-new-account .billing-info .billing-info-address,
+.create-new-account .billing-info .billing-info-city,
+.create-new-account .billing-info .billing-info-state,
+.create-new-account .billing-info .billing-info-phone,
+.create-new-account .shipping-info .shipping-info-first,
+.create-new-account .shipping-info .shipping-info-address,
+.create-new-account .shipping-info .shipping-info-city,
+.create-new-account .shipping-info .shipping-info-state,
+.create-new-account .shipping-info .shipping-info-phone {
+float:left;
+margin-right: 25px;
+}
+ 
+ .contact-us input, .add-company-body input,  .sign-in-content input, .create-new-account .login-info input, .create-new-account .billing-info input, .create-new-account .shipping-info input  { 
+  width: 300px; 
+  margin-bottom: 9px; } 
+ 
+ .create-new-account .billing-info .billing-info-state input,
+ .create-new-account .shipping-info .shipping-info-state input { width: 69px; }
+ 
+ .create-new-account .billing-info .billing-info-zipcode input,
+ .create-new-account .shipping-info .shipping-info-zipcode input { width: 200px; }
+ .create-new-account h3 { margin-top:25px;}
+ 
+.contact-us textarea, .add-company-body textarea { 
+  width: 500px; 
+} 
+ 
 .fed-small-business-categories .left, .fed-small-business-categories .right, .international-locations .left, .international-locations .right { 
   float: left;
   width: 340px;
