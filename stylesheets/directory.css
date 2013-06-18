@@ -684,13 +684,14 @@ line-height: 19px; }
   clear:both;
   margin: 5px 0 0 0;  }
   
-.standard-tier { 
-  border: 1px solid #cfd0d0; 
+.standard-tier {
+  border-bottom: 1px solid #CFD0D0;
   color: #666666;
-  font-size: 11px;
   font-family: arial;
-  margin: 15px 0 0 0; 
-  padding: 0 20px 11px;  }
+  font-size: 11px;
+  margin: 12px 0 0;
+  padding: 0 10px 9px;
+}
   
 .standard-tier h4 a { 
   color: #1a488a;
