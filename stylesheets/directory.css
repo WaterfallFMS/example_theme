@@ -352,13 +352,13 @@ line-height: 19px; }
   background-color: #cad1de;
   padding: 16px 5px 17px 19px;  }
 
-#right .about-directory-block .top { 
+#right .about-directory-block .top {  margin-bottom: 7px; }
+#right .about-directory-block .top a { 
   font-family: Impact,"nimbus-sans-condensed",arial,sans-serif;
   font-size: 18px;
   font-weight: regular;
-  color: #1a488a;
-  margin-bottom: 7px;  }
-
+  color: #1a488a; }
+  
 #right .about-directory-block .bottom a { 
   font-family: arial;
   font-size: 12px;
@@ -366,7 +366,9 @@ line-height: 19px; }
   color: #1a488a; 
   text-decoration: none; }
 
-#right .about-directory-block .bottom a:hover {  color: #CE2748; }
+#right .about-directory-block .bottom a:hover,
+#right .about-directory-block .top a:hover {  
+  color: #CE2748; }
 
 #right .about-directory-block ul { 
   list-style:none; 
