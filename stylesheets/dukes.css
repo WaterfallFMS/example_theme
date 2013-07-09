@@ -1,0 +1,73 @@
+/* CSS for FloodSmart Agents Demo - Farmers Insurance Styling */
+
+/* Links */
+
+a, a:link { color: #233b70; text-decoration: underline; }
+a:hover { color: #233b70; text-decoration: none; }
+
+/* Defaults */
+
+h1 {color: #233b70; }
+h2 { color: #233b70; }
+h3 { color: #233b70; }
+
+
+/* Top Nav */
+
+#logo { background: url("../images/logo.jpg") no-repeat center -201px transparent; }
+
+
+/* Navigation */
+
+#top-right #navigation.menu a { color: #233b70; }
+
+#top-right #navigation.menu a.sf-depth-1.active,  
+#top-right #navigation.menu a.sf-depth-1:hover, 
+#top-right #navigation.menu .sfHover a.sf-depth-1 { color: #A9A47F; }
+
+/* ----- Upper Block  -------- */
+
+#upper-block #form-buttons { background-color: #233b70; }
+
+#upper-block #profile-name { color: #233b70; }
+
+/* --- Profile Tabs ----*/
+
+#tabs ul li a { color: #233b70; }
+  
+#tabs ul li.contact a {  background: url("../images/independent-tab-icons.png") no-repeat 11px 13px transparent; }
+
+#tabs ul li.hours a { background: url("../images/independent-tab-icons.png") no-repeat 10px -22px transparent; }
+
+#tabs ul li.location a { background: url("../images/independent-tab-icons.png") no-repeat 12px -55px transparent; }
+
+#tabs #tab-1 .blue-button-end { background: url("../images/tab-button-bg.png") no-repeat right -77px transparent; }
+
+#tabs #tab-1 .blue-button { background: url("../images/tab-button-bg.png") no-repeat 0 -77px transparent; }
+
+#tabs #tab-3 a { color: #233b70; }
+
+  
+/* -----  Form Buttons  ------ */
+
+#form-buttons .request-quote-block .request-quote-block-head .padding { background: url("../images/form-button-icons.png") no-repeat 25px 10px #192B53; }
+
+#form-buttons .request-quote-block .request-quote-block-form  { background-color: #192B53; }
+
+#form-buttons .request-quote-block .request-quote-block-form  input#request_block_submit { 
+  background: url("../images/submit-arrow-sprite.png") no-repeat 74px -40px #EEEEEE;
+  color: #192B53;
+}
+  
+#form-buttons .risk-profile-block .risk-profile-block-head .padding { background: url("../images/form-button-icons.png") no-repeat 25px -68px #233b70; }
+
+#form-buttons .risk-profile-block .risk-profile-block-form { background-color: #233b70; }
+
+#form-buttons .risk-profile-block .risk-profile-block-form  input#risk_block_submit { 
+  background: url("../images/submit-arrow-sprite.png") no-repeat 74px -40px #EEEEEE;
+  color: #192B53;
+}
+
+/* -------  Middle Block  --------- */
+
+#middle-block .middle-block-right span.bold-blue { color: #233b70; }

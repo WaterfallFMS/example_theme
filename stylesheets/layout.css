@@ -1,0 +1,55 @@
+/* Tablet Portrait */
+@media only screen and (max-width: 989px), screen and (max-width: 1136px) and (device-aspect-ratio: 40/71) {
+
+.wrap { width: 480px; }
+
+#logo { 
+  display: block;
+  background: url("../images/logo-mobile.jpg") no-repeat scroll center 7px transparent;
+  float: left;
+  padding: 40px 155px;
+}
+
+#mobile-nav-button { 
+  background: url("../images/mobile-nav-sprite.png") no-repeat scroll center top transparent;
+  padding: 14px 14px;
+}
+
+#top-nav,
+#lower-block #lower-block-divider,
+#navigation { display:none;}
+
+#upper-block #profile {  
+  padding: 25px 25px 0;
+  width: auto;
+}
+
+#upper-block #form-buttons { width: 100%; }
+
+#form-buttons .request-quote-block .request-quote-block-form input#request_block_submit { margin-right: 66px; }
+#form-buttons .risk-profile-block .risk-profile-block-form input#risk_block_submit { margin-right: 74px; }
+
+#middle-block,
+#lower-block,
+#lower-block #lower-block-right { clear: both; }
+
+#middle-block .middle-block-left,
+#middle-block .middle-block-right,
+#lower-block #lower-block-left,
+#lower-block #lower-block-right { width: auto; }
+
+#lower-block #lower-block-left .tool-header img { padding: 0 15px 0 28px; }
+#lower-block #lower-block-right .testimonial-header img { padding: 0 15px 0 4px; }
+#lower-block #lower-block-right .testimonial-header { margin-top: 25px; }
+
+#lower-block-left .tool-carousel .cycle-slideshow { margin: 0 5px 0 40px; }
+#lower-block-right .testimonial-carousel .cycle-slideshow { margin: 0 40px 0 16px; }
+#lower-block-left .tool-carousel .center a#prev { left: 15px; }
+#lower-block-left .tool-carousel .center a#next { right: -20px; }
+#lower-block-right .testimonial-carousel .center a#prev2 { left: -10px; }
+#lower-block-right .testimonial-carousel .center a#next2 { right: 14px; }
+
+#footer { padding: 0 0 15px 25px; }
+
+
+}

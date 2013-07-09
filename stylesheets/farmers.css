@@ -1,0 +1,73 @@
+/* CSS for FloodSmart Agents Demo - Farmers Insurance Styling */
+
+/* Links */
+
+a, a:link { color: #005fbd; text-decoration: underline; }
+a:hover { color: #005fbd; text-decoration: none; }
+
+/* Defaults */
+
+h1 {color: #005fbd; }
+h2 { color: #005fbd; }
+h3 { color: #005fbd; }
+
+
+/* Top Nav */
+
+#logo { background: url("../images/logo.jpg") no-repeat center -101px transparent; }
+
+
+/* Navigation */
+
+#top-right #navigation.menu a { color: #005fbd; }
+
+#top-right #navigation.menu a.sf-depth-1.active,  
+#top-right #navigation.menu a.sf-depth-1:hover, 
+#top-right #navigation.menu .sfHover a.sf-depth-1 { color: #FC0112; }
+
+/* ----- Upper Block  -------- */
+
+#upper-block #form-buttons { background-color: #005fbd; }
+
+#upper-block #profile-name { color: #005fbd; }
+
+/* --- Profile Tabs ----*/
+
+#tabs ul li a { color: #005fbd; }
+  
+#tabs ul li.contact a {  background: url("../images/farmers-tab-icons.png") no-repeat 11px 13px transparent; }
+
+#tabs ul li.hours a { background: url("../images/farmers-tab-icons.png") no-repeat 10px -22px transparent; }
+
+#tabs ul li.location a { background: url("../images/farmers-tab-icons.png") no-repeat 12px -55px transparent; }
+
+#tabs #tab-1 .blue-button-end { background: url("../images/tab-button-bg.png") no-repeat right -39px transparent; }
+
+#tabs #tab-1 .blue-button { background: url("../images/tab-button-bg.png") no-repeat 0 -39px transparent; }
+
+#tabs #tab-3 a { color: #005fbd; }
+
+  
+/* -----  Form Buttons  ------ */
+
+#form-buttons .request-quote-block .request-quote-block-head .padding { background: url("../images/form-button-icons.png") no-repeat 25px 10px #004a98; }
+
+#form-buttons .request-quote-block .request-quote-block-form  { background-color: #004a98; }
+
+#form-buttons .request-quote-block .request-quote-block-form  input#request_block_submit { 
+  background: url("../images/submit-arrow-sprite.png") no-repeat 74px -16px #EEEEEE;
+  color: #004a98;
+}
+  
+#form-buttons .risk-profile-block .risk-profile-block-head .padding { background: url("../images/form-button-icons.png") no-repeat 25px -68px #005fbd; }
+
+#form-buttons .risk-profile-block .risk-profile-block-form { background-color: #005fbd; }
+
+#form-buttons .risk-profile-block .risk-profile-block-form  input#risk_block_submit { 
+  background: url("../images/submit-arrow-sprite.png") no-repeat 74px -16px #EEEEEE;
+  color: #004a98;
+}
+
+/* -------  Middle Block  --------- */
+
+#middle-block .middle-block-right span.bold-blue { color: #005FBD; }

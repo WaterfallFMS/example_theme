@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  {% capture company %}{% yield_content Insurance Company %}{% endcapture %}
   
   <!-- SEO Meta -->
-  <title>Flood Insurance | FloodSmart</title>
-  {% seo_tags %}
+  <title>Flood Insurance</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
 
   <!-- Extra Meta -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
@@ -26,7 +26,6 @@
   <!--[if lt IE 9]>
     <script src="dist/html5shiv.js"></script>
   <![endif]-->
-  {% default_js %}
   <script type="text/javascript" src="../javascripts/jquery.min.js"></script>
   <script type="text/javascript" src="../javascripts/superfish.js"></script>  
   <script type="text/javascript" src="../javascripts/jquery.cycle2.min.js"></script>
@@ -40,7 +39,7 @@
   <!-- Specific Stylesheets -->
   <link rel="stylesheet" href="../stylesheets/style.css" type="text/css" />  
   <link rel="stylesheet" href="../stylesheets/layout.css" type="text/css" />
-  <link rel="stylesheet" href="../stylesheets/{{company | downcase}}.css" type="text/css" /> <!--agent testings -->
+  <link rel="stylesheet" href="../stylesheets/farmers.css" type="text/css" />
   
   <script type="text/javascript">
   $(document).ready(function(){
@@ -72,9 +71,6 @@
      
    });
 </script>  
-  
-  <!--  Analytics -->
-  {% analytics_tag %}
   
 </head>
 <body class="front">
@@ -124,9 +120,9 @@
         <div id="profile">
         
         <div id="profile-top">
-             <div id="profile-pic"><div class="frame"><img src="../images/profile-photo.jpg" /></div></div>
-             <div id="profile-name">{% yield_content Agent Name %}<!--Tim Sturgis--></div>
-             <div id="profile-license">{% yield_content Agent License %} <!--Licensed in Flood, Auto, Home, and Life in DC, MD, VA & DE --></div>
+             <div id="profile-pic"><div class="frame"><img src="../images/profile-photo-joan.jpg" /></div></div>
+             <div id="profile-name">Joan Belinkie</div>
+             <div id="profile-license">Licensed in Flood, Auto, Home, and Life in DC, MD, VA</div>
         </div>
         <div class="clearfix"></div>
         <div id="profile-bottom" class="clearfix">
@@ -138,14 +134,14 @@
                  </ul>
                  <div id="tab-1" class="tab-container">
                     <div class="tab-left">
-                       <div class="tab-info"><div class="tab-info-header">Direct:&nbsp;</div> {% yield_content Direct Phone %} <!-- 202.728.1199 x5302 --></div>
-                       <div class="tab-info"><div class="tab-info-header">Toll-Free:&nbsp;</div> {% yield_content Toll Free %} <!--888.442.0329 --></div>
-                       <div class="tab-info"><div class="tab-info-header">Cell:&nbsp;</div> {% yield_content Cell Phone %} <!--404.290.1976--></div>
-                       <div class="tab-info"><div class="tab-info-header">Fax:&nbsp;</div> {% yield_content Fax %} <!--202.728.2922 --></div>
-                       <div class="tab-info"><a href="mailto:t-sturgis@libertymutual.com"> {% yield_content Email %} <!--t-sturgis@libertymutual.com --></a></div>
+                       <span>Direct:</span> 202.728.1199 x5302<br>
+                       <span>Toll-Free:</span> 888.442.0329<br>
+                       <span>Cell:</span> 404.290.1976<br>
+                       <span>Fax:</span> 202.728.2922<br>
+                       <a href="mailto:t-sturgis@libertymutual.com">j-belinkie@farmersinsurance.com</a>
                     </div>
                     <div class="tab-right">
-                       <div class="blue-button"><a href="tel:888-442-0329">Call 888.442.0329<span class="blue-button-end"></span></a></div>
+                       <div class="blue-button"><a href="tel:888-442-0329"> Call 888.442.0329<span class="blue-button-end"></span></a></div>
                        <div class="social-media">
                           <a href=""><img src="../images/facebook-icon.png" /></a>
                           <a href=""><img src="../images/linkedin-icon.png" /></a>
@@ -158,24 +154,24 @@
                  
                  <div id="tab-2" class="tab-container">
                     <div class="tab-left">
-                       <div class="tab-info"><div class="tab-info-header">Mon:&nbsp;</div> {% yield_content Monday Hours %} <!--8:00am to 5:00pm --></div>
-                       <div class="tab-info"><div class="tab-info-header">Tues:&nbsp;</div> {% yield_content Tuesday Hours %} <!--8:00am to 5:00pm --></div>
-                       <div class="tab-info"><div class="tab-info-header">Wed:&nbsp;</div> {% yield_content Wednesday Hours %} <!--10:00am to 7:00pm --></div>
-                       <div class="tab-info"><div class="tab-info-header">Thurs:&nbsp;</div> {% yield_content Thursday Hours %} <!--8:00am to 5:00pm --></div>
+                       <span>Mon:</span> 8:00am to 5:00pm<br>
+                       <span>Tues:</span> 8:00am to 5:00pm<br>
+                       <span>Wed:</span> 10:00am to 7:00pm<br>
+                       <span>Thurs:</span> 8:00am to 5:00pm<br>
                     </div>
                     <div class="tab-right">
-                       <div class="tab-info"><div class="tab-info-header">Fri:&nbsp;</div> {% yield_content Friday Hours %} <!--8:00am to 5:00pm--></div>
-                       <div class="tab-info"><div class="tab-info-header">Sat:&nbsp;</div> {% yield_content Saturday Hours %} <!--9:00am to 1:00pm--></div>
-                       <div class="tab-info"><div class="tab-info-header">Sun:&nbsp;</div> {% yield_content Sunday Hours %} <!--Closed--></div>
+                       <span>Fri:</span> 8:00am to 5:00pm<br>
+                       <span>Sat:</span> 9:00am to 1:00pm<br>
+                       <span>Sun:</span> Closed<br>
                     </div>
                  </div>
 
                  <div id="tab-3" class="tab-container">
                    <div class="tab-left">
-                         <div class="tab-info-header"> {% yield_content Office Title %} <!--Liberty Mutual Insurance of Arlington --> </div>
-                         <div class="tab-info"> {% yield_content Office Address %} <!--1584 Wilson Boulevard--> </div>
-                         <div class="tab-info"> {% yield_content Office Address2 %} <!--Suite 1200--> </div>
-                         <div class="tab-info"> {% yield_content Office City %},&nbsp;{% yield_content Office State %}&nbsp;{% yield_content Office Zip %} <!--Arlington, VA 22205--> </div>
+                       <span>Farmers Insurance Group of Arlington</span><br>
+                       <p>1584 Wilson Boulevard<br>
+                       Suite 1200<br>
+                       Arlington, VA 22205<br>
                     </div>
                     <div class="tab-right">
                        <a href="">View Google Map</a><br>
@@ -365,7 +361,7 @@
           </div>
        </div>
        
-       <div id="lower-block-divider"><img src="images/lower-divider.png" /></div>
+       <div id="lower-block-divider"><img src="../images/lower-divider.png" /></div>
        
        <div id="lower-block-right">
          <div class="testimonial-header"><img src="../images/testimonials-icon.png" /><h2>Testimonial Videos</h2></div>
