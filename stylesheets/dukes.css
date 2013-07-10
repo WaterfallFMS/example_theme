@@ -41,9 +41,7 @@ h3 { color: #233b70; }
 
 #tabs ul li.location a { background: url("../images/independent-tab-icons.png") no-repeat 12px -55px transparent; }
 
-#tabs #tab-1 .blue-button-end { background: url("../images/tab-button-bg.png") no-repeat right -77px transparent; }
-
-#tabs #tab-1 .blue-button { background: url("../images/tab-button-bg.png") no-repeat 0 -77px transparent; }
+#tabs #tab-1 .blue-button a { background: url("../images/tab-button-bg.png") no-repeat 0 -72px transparent; }
 
 #tabs #tab-3 a { color: #233b70; }
 

@@ -586,23 +586,55 @@ img.left { float: left; margin: 0 0 1em 1em; }
   height: 33px;
 }
 
-#tabs #tab-1 .blue-button { background: url("../images/tab-button-bg.png") no-repeat 0 0 transparent;
-  height: 33px;
+#tabs #tab-1 .blue-button { 
+  
   margin-bottom: 15px;
   }
 
 #tabs #tab-1 .blue-button a { 
+  background: url("../images/tab-button-bg.png") no-repeat 0 6px transparent;
   text-decoration:none;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
   font-weight: 600;
   line-height: 32px;
-  padding: 10px 0 0 13px;  }
+  padding: 10px 39px 10px 33px;  }
 
 #tabs #tab-1 .social-media { margin: 0 0 0 7px; display: block;} 
 #tabs #tab-1 .social-media a{ 
-  margin-right: 5px;
+  margin-right: 6px;
+}
+
+.social-media .facebook,
+.social-media .linked-in,
+.social-media .twitter,
+.social-media .google { float:left; }
+
+.social-media .facebook a {
+  background: url("../images/facebook-icon.png") no-repeat 0 0 transparent;
+  padding: 5px 6px 0 20px;
+
+}
+
+.social-media .linked-in a {
+  background: url("../images/linkedin-icon.png") no-repeat 0 0 transparent;
+  padding: 5px 6px 0 20px;
+}
+
+.social-media .twitter a {
+  background: url("../images/twitter-icon.png") no-repeat 0 0 transparent;
+  padding: 5px 6px 0 20px;
+}
+
+.social-media .google a {
+  background: url("../images/google-icon.png") no-repeat 0 0 transparent;
+  padding: 5px 6px 0 20px;
+}
+
+.social-media .mail a {
+  background: url("../images/mail-icon.png") no-repeat 0 0 transparent;
+  padding: 5px 6px 0 20px;
 }
 
 #tabs #tab-3 a { 
@@ -781,7 +813,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 }
 
 #lower-block #lower-block-right .testimonial-header img { 
-  padding: 0 15px 0 18px;
+  padding: 0 15px 0 0;
   float: left;
 }
 
@@ -796,17 +828,25 @@ img.left { float: left; margin: 0 0 1em 1em; }
   padding-bottom: 40px;
 }
 
+#lower-block-left .pics {
+  height: 200px;
+  margin: 0 0 0 85px;
+  overflow: hidden;
+  padding: 0;
+  width: 350px;}
+
+  #lower-block-right .pics {
+  height: 240px;
+  margin: 0 0 0 50px;
+  overflow: hidden;
+  padding: 0;
+  width: 350px;}
+
+#lower-block-left .pics img,
+#lower-block-right .pics img { border: 5px solid #ffffff; }
+
 #lower-block-left .tool-carousel,
 #lower-block-right .testimonial-carousel { position:relative; }
-
-#lower-block-left .tool-carousel .cycle-slideshow { margin: 0 5px 0 50px; }
-
-#lower-block-right .testimonial-carousel .cycle-slideshow { 
-  float:right;
-  margin: 0 50px 0 5px; }
-
-#lower-block-left .tool-carousel .cycle-slideshow img,
-#lower-block-right .testimonial-carousel .cycle-slideshow img { margin: 0 5px; }
 
 #lower-block-left .tool-carousel .center a#prev {
   background: url("../images/white-arrows.png") no-repeat 0 9px #CACACA;
@@ -815,8 +855,8 @@ img.left { float: left; margin: 0 0 1em 1em; }
   color: transparent;
   position:absolute;
   z-index: 20;
-  left: 25px;
-  top: 35px;
+  left: 34px;
+  top: 60px;
 }
 
 #lower-block-right .testimonial-carousel .center a#prev2 { 
@@ -827,7 +867,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
   position:absolute;
   z-index: 20;
   left: 0;
-  top: 35px;
+  top: 60px;
 }
 
 #lower-block-left .tool-carousel .center a#next {
@@ -838,7 +878,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
   position:absolute;
   z-index: 20;
   right: 0;
-  top: 35px;
+  top: 60px;
 }
 
 #lower-block-right .testimonial-carousel .center a#next2 {
@@ -848,13 +888,8 @@ img.left { float: left; margin: 0 0 1em 1em; }
   color: transparent;
   position:absolute;
   z-index: 20;
-  right: 22px;
-  top: 35px;
-}
-
-#lower-block-divider {
-  float:left;
-  margin: 50px 14px 0 20px;
+  right: 35px;
+  top: 60px;
 }
 
 .testimonial-title {
@@ -880,6 +915,10 @@ img.left { float: left; margin: 0 0 1em 1em; }
 
 .testimonial-links a:hover { text-decoration: underline; }
 
+#lower-block-divider {
+  float:left;
+  padding: 65px 0 0 20px;
+}
 
 /* ------ Footer ------- */
 

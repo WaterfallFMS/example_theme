@@ -38,16 +38,18 @@
 #lower-block #lower-block-left,
 #lower-block #lower-block-right { width: auto; }
 
-#lower-block #lower-block-left .tool-header img { padding: 0 15px 0 28px; }
-#lower-block #lower-block-right .testimonial-header img { padding: 0 15px 0 4px; }
+#lower-block #lower-block-left .tool-header img { padding: 0 15px 0 10px; }
+#lower-block #lower-block-right .testimonial-header img { padding: 0 15px 0 15px; }
 #lower-block #lower-block-right .testimonial-header { margin-top: 25px; }
 
-#lower-block-left .tool-carousel .cycle-slideshow { margin: 0 5px 0 40px; }
-#lower-block-right .testimonial-carousel .cycle-slideshow { margin: 0 40px 0 16px; }
-#lower-block-left .tool-carousel .center a#prev { left: 15px; }
-#lower-block-left .tool-carousel .center a#next { right: -20px; }
-#lower-block-right .testimonial-carousel .center a#prev2 { left: -10px; }
-#lower-block-right .testimonial-carousel .center a#next2 { right: 14px; }
+#lower-block-left .tool-carousel .center a#prev { left: 30px; }
+#lower-block-left .tool-carousel .center a#next { right: -30px; }
+#lower-block-right .testimonial-carousel .center a#prev2 { left: 30px; }
+#lower-block-right .testimonial-carousel .center a#next2 { right: -30px; }
+
+#lower-block #lower-block-right { float: left; }
+#lower-block-right .pics,
+#lower-block-left .pics { margin: 0 0 0 70px; }
 
 #footer { padding: 0 0 15px 25px; }
 
