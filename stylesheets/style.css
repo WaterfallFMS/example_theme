@@ -539,12 +539,13 @@ img.left { float: left; margin: 0 0 1em 1em; }
   float:left;
   width: 45%;
   padding: 15px 0 0 15px;
+  height: 141px;
 }
 
 .tab-left .tab-info,
 .tab-right .tab-info {
-  max-height: 23px;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #tab-3 .tab-left .tab-info-header {
