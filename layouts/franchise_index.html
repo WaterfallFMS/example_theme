@@ -27,17 +27,10 @@
     <script src="dist/html5shiv.js"></script>
   <![endif]-->
   {% default_js %}
-  <script type="text/javascript" src="../javascripts/jquery.js"></script>
   <script type="text/javascript" src="../javascripts/superfish.js"></script>  
-  <!--<script type="text/javascript" src="../javascripts/jquery.cycle2.min.js"></script>
-  <script type="text/javascript" src="../javascripts/jquery.cycle2.carousel.min.js"></script> -->
   <script type="text/javascript" src="../javascripts/jquery.cycle.lite.js"></script>
   <script type="text/javascript" src="../javascripts/scripts.js"></script>
 
-  <!-- Default/Plugin Stylesheets -->
-  <link rel="stylesheet" href="../stylesheets/normalize.css" type="text/css" />
-  <!--<link rel="stylesheet" href="css/skeleton.css" type="text/css" />-->
-  
   <!-- Specific Stylesheets -->
   <link rel="stylesheet" href="../stylesheets/style.css" type="text/css" />  
   <link rel="stylesheet" href="../stylesheets/layout.css" type="text/css" />
@@ -139,7 +132,7 @@
       <div id="upper-block" class=" clearfix">
          <div id="profile">
            <div id="profile-top">
-               <div id="profile-pic"><div class="frame"><img src="../images/profile-photo.jpg" /></div></div>
+               <div id="profile-pic"><div class="frame"><!--<img src="../images/profile-photo.jpg" />--></div></div>
                <div id="profile-name">{% yield_content Agent Name %}<!--Tim Sturgis--></div>
                <div id="profile-license">{% yield_content Agent License %} <!--Licensed in Flood, Auto, Home, and Life in DC, MD, VA & DE --></div>
           </div>
@@ -153,11 +146,11 @@
                  </ul>
                  <div id="tab-1" class="tab-container">
                     <div class="tab-left">
-                       <div class="tab-info"><div class="tab-info-header">Direct:&nbsp;</div> {% yield_content Direct Phone %} <!-- 202.728.1199 x5302 --></div>
+                       <div class="tab-info"><div class="tab-info-header">Direct:&nbsp;</div> {{location.phone}} <!-- 202.728.1199 x5302 --></div>
                        <div class="tab-info"><div class="tab-info-header">Toll-Free:&nbsp;</div> {% yield_content Toll Free %} <!--888.442.0329 --></div>
                        <div class="tab-info"><div class="tab-info-header">Cell:&nbsp;</div> {% yield_content Cell Phone %} <!--404.290.1976--></div>
-                       <div class="tab-info"><div class="tab-info-header">Fax:&nbsp;</div> {% yield_content Fax %} <!--202.728.2922 --></div>
-                       <div class="tab-info"><a href="mailto:{% yield_content Email %}"> {% yield_content Email %} <!--t-sturgis@libertymutual.com --></a></div>
+                       <div class="tab-info"><div class="tab-info-header">Fax:&nbsp;</div> {{location.fax}} <!--202.728.2922 --></div>
+                       <div class="tab-info"><a href="mailto:{{location.support_email}}"> {{location.support_email}} <!--t-sturgis@libertymutual.com --></a></div>
                     </div>
                     <div class="tab-right">
                        <div class="blue-button"><a href="tel:{% yield_content Toll Free %}">{% yield_content Toll Free %}</a></div>
@@ -166,7 +159,7 @@
                           <div class="linked-in"><a href="{% yield_content Linked In Profile %}"></a></div>
                           <div class="twitter"><a href="{% yield_content Twitter Page %}"></a></div>
                           <div class="google"><a href="{% yield_content Google Page %}"></a></div>
-                          <div class="mail"><a href="{% yield_content Email %}"></a></div>
+                          <div class="mail"><a href="mailto:{{location.support_email}}"></a></div>
                        </div>
                     </div>
                  </div>

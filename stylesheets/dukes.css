@@ -11,7 +11,6 @@ h1 {color: #233b70; }
 h2 { color: #233b70; }
 h3 { color: #233b70; }
 
-
 /* Top Nav */
 
 #logo { background: url("../images/logo.jpg") no-repeat center -201px transparent; }
@@ -30,6 +29,8 @@ h3 { color: #233b70; }
 #upper-block #form-buttons { background-color: #233b70; }
 
 #upper-block #profile-name { color: #233b70; }
+
+#upper-block #profile-pic .frame { background: url("../images/profile-photo-michael.jpg") no-repeat top left transparent; }
 
 /* --- Profile Tabs ----*/
 

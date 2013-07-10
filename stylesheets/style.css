@@ -405,6 +405,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
   overflow:hidden; }
   
 #upper-block #profile-pic .frame {
+  background: url("../images/profile-photo.jpg") no-repeat top left transparent;
   width: 135px;
   height: 135px;
   overflow: hidden;
