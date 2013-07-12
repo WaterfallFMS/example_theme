@@ -135,6 +135,7 @@
                <div id="profile-pic"><div class="frame"><!--<img src="../images/profile-photo.jpg" />--></div></div>
                <div id="profile-name">{% yield_content Agent Name %}<!--Tim Sturgis--></div>
                <div id="profile-license">{% yield_content Agent License %} <!--Licensed in Flood, Auto, Home, and Life in DC, MD, VA & DE --></div>
+               <div id="profile-website"><a href="{% yield_content Agent Website %}"> {% yield_content Agent Name %}'s Official Website </a></div>
           </div>
           <div class="clearfix"></div>
           <div id="profile-bottom" class="clearfix">
@@ -150,7 +151,7 @@
                        <div class="tab-info"><div class="tab-info-header">Toll-Free:&nbsp;</div> {% yield_content Toll Free %} <!--888.442.0329 --></div>
                        <div class="tab-info"><div class="tab-info-header">Cell:&nbsp;</div> {% yield_content Cell Phone %} <!--404.290.1976--></div>
                        <div class="tab-info"><div class="tab-info-header">Fax:&nbsp;</div> {{location.fax}} <!--202.728.2922 --></div>
-                       <div class="tab-info"><a href="mailto:{{location.support_email}}"> {{location.support_email}} <!--t-sturgis@libertymutual.com --></a></div>
+                       <div class="tab-info"><a href="mailto:{{location.support_email}}"><div class="tab-info-email">Email</div></a></div>
                     </div>
                     <div class="tab-right">
                        <div class="blue-button"><a href="tel:{% yield_content Toll Free %}">{% yield_content Toll Free %}</a></div>

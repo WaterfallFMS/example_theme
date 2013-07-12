@@ -6,8 +6,8 @@ body {  font: 62.5% Arial, Helvetica, sans-serif; }
 
 /* Links */
 
-a, a:link { color: #004280; text-decoration: underline; }
-a:hover { color: #004280; text-decoration: none; }
+a, a:link { color: #0a70bc; text-decoration: underline; }
+a:hover { color: #0a70bc; text-decoration: none; }
 
 /* Highlight Colors */
 ::-moz-selection { background: #6098D1; color: #FFFFFF; text-shadow: none; }
@@ -32,7 +32,7 @@ a.email { background: url('../images/icons/mailto.gif') 0px 3px no-repeat; paddi
 h1 {
   margin: 0 0 1em 0;
   padding: 0;
-	color: #004280;
+	color: #0a70bc;
 	font-size: 2.4em;
   font-weight: 600;
   font-family: 'Open Sans',sans-serif;
@@ -41,7 +41,7 @@ h1 {
 h2 {
   margin: 0 0 1em 0;
   padding: 0;
-	color: #004280;
+	color: #0a70bc;
 	font-size: 1.8em;
   font-weight: 600;
   font-family: 'Open Sans',sans-serif;
@@ -50,7 +50,7 @@ h2 {
 h3 {
   margin: 0 0 1em 0;
   padding: 0;
-	color: #004280;
+	color: #0a70bc;
 	font-size: 1.5em;
   font-weight: 600;
   font-family: 'Open Sans',sans-serif;
@@ -297,7 +297,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 	padding: 0;
 	width: auto;
   text-decoration: none;
-  color: #004280;
+  color: #0a70bc;
   font-size: 16px;
 }
 
@@ -309,7 +309,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 #top-right #navigation.menu a.sf-depth-1:hover, 
 #top-right #navigation.menu .sfHover a.sf-depth-1 {
   background-color: #FFFFFF;
-  color: #4E525B;
+  color: #f83413;
 }
 
 #top-right #navigation.menu ul li ul { /* Secondary */
@@ -399,7 +399,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 
 #upper-block #form-buttons { 
   width: 50%;
-  background-color: #013463;  
+  background-color: #db1d1d;  
   float: right; 
   height: 385px;
   overflow:hidden; }
@@ -427,7 +427,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 }
 
 #upper-block #profile-name {
-  color: #004280;
+  color: #0a70bc;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6em;
   font-weight: 700;
@@ -445,6 +445,9 @@ img.left { float: left; margin: 0 0 1em 1em; }
   overflow: hidden;
   max-height: 45px;
 }
+
+#upper-block #profile-website a { text-decoration: none; }
+#upper-block #profile-website a:hover { text-decoration: underline; }
 
 /* --- Profile Tabs ----*/
 
@@ -473,7 +476,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 }
 
 #tabs ul li a{
-  color: #004280;
+  color: #0a70bc;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
   font-weight: 700;
@@ -485,7 +488,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
   height: 39px; }
   
 #tabs ul li.contact a {
-  background: url("../images/liberty-tab-icons.png") no-repeat 11px 13px transparent;
+  background: url("../images/allstate-tab-icons.png") no-repeat 11px 13px transparent;
   padding: 10px 3px 0 35px;
 }
 
@@ -494,7 +497,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
   height: 39px; }
   
 #tabs ul li.hours a {
-  background: url("../images/liberty-tab-icons.png") no-repeat 10px -22px transparent;
+  background: url("../images/allstate-tab-icons.png") no-repeat 10px -22px transparent;
   padding: 10px 0 0 35px;
 }
 
@@ -503,7 +506,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
   height: 39px; }
 
 #tabs ul li.location a {
-  background: url("../images/liberty-tab-icons.png") no-repeat 12px -55px transparent;
+  background: url("../images/allstate-tab-icons.png") no-repeat 12px -55px transparent;
   padding: 10px 0 0 35px;
 }
 
@@ -545,8 +548,11 @@ img.left { float: left; margin: 0 0 1em 1em; }
 .tab-left .tab-info,
 .tab-right .tab-info {
   overflow: hidden;
-  text-overflow: ellipsis;
 }
+
+.tab-info-email {
+  background: url("../images/email-sprite.png") no-repeat 1px 4px transparent;
+  padding: 1px 1px 1px 40px; }
 
 #tab-3 .tab-left .tab-info-header {
   max-height: 45px;
@@ -641,7 +647,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 
 #tabs #tab-3 a { 
   text-decoration:none;
-  color: ##004280;
+  color: #0a70bc;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.0em;
   font-weight: 500;
@@ -652,10 +658,10 @@ img.left { float: left; margin: 0 0 1em 1em; }
 /* -----  Form Buttons  ------ */
 
 #form-buttons .request-quote-block .request-quote-block-head .padding {
-  background: url("../images/form-button-icons.png") no-repeat 25px 10px #00427F;
+  background: url("../images/form-button-icons.png") no-repeat 25px 10px #ac1414;
   padding: 20px 10px 18px 110px;
   display: block;
-  color: #8599b5;
+  color: #d8d8d8;
   font-family: arial, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -671,10 +677,10 @@ img.left { float: left; margin: 0 0 1em 1em; }
 }
 
 #form-buttons .request-quote-block .request-quote-block-form  {
-  background-color: #00427F;
+  background-color: #ac1414;
   padding: 0 0 7px 110px;
   display: block;
-  color: #8599b5;
+  color: #d8d8d8;
   font-family: arial, sans-serif;
   font-size: 1.1em;
   position:relative;
@@ -697,19 +703,19 @@ img.left { float: left; margin: 0 0 1em 1em; }
 }
 
 #form-buttons .request-quote-block .request-quote-block-form  input#request_block_submit { 
-  background: url("../images/submit-arrow-sprite.png") no-repeat 74px 9px #EEEEEE;
+  background: url("../images/submit-arrow-sprite.png") no-repeat 74px 10px #EEEEEE;
   width: 100px; 
   padding: 6px 19px 6px 0;
   float: right;
   margin-right: 82px;
-  color: #004280;
+  color: #AC1414;
 }
   
 #form-buttons .risk-profile-block .risk-profile-block-head .padding {
-  background: url("../images/form-button-icons.png") no-repeat 25px -68px #013463;
+  background: url("../images/form-button-icons.png") no-repeat 25px -68px #db1d1d;
   padding: 22px 10px 18px 110px;
   display: block;
-  color: #8599b5;
+  color: #d8d8d8;
   font-family: arial, sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -725,10 +731,10 @@ img.left { float: left; margin: 0 0 1em 1em; }
 }
 
 #form-buttons .risk-profile-block .risk-profile-block-form  {
-  background-color: #013463;
+  background-color: #db1d1d;
   padding: 0 0 10px 110px;
   display: block;
-  color: #8599b5;
+  color: #d8d8d8;
   font-family: arial, sans-serif;
   font-size: 1.1em;
   position:relative;
@@ -756,12 +762,12 @@ img.left { float: left; margin: 0 0 1em 1em; }
   position: absolute;  }
   
 #form-buttons .risk-profile-block .risk-profile-block-form  input#risk_block_submit { 
-  background: url("../images/submit-arrow-sprite.png") no-repeat 74px 9px #EEEEEE;
+  background: url("../images/submit-arrow-sprite.png") no-repeat 74px 10px #EEEEEE;
   width: 100px; 
   padding: 6px 19px 6px 0;
   float: right;
   margin-right: 90px;
-  color: #004280;
+  color: #AC1414;
 }
 
 /* -------  Middle Block  --------- */
@@ -790,7 +796,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 #middle-block .middle-block-right span.bold { font-weight: 800;}
 #middle-block .middle-block-right span.bold-blue { 
   font-weight: 700;
-  color: #004280;
+  color: #0a70bc;
 }
 
 /* ------- Lower Block  ------- */

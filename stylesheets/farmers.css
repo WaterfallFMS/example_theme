@@ -30,7 +30,7 @@ h3 { color: #005fbd; }
 
 #upper-block #profile-name { color: #005fbd; }
 
-#upper-block #profile-pic .frame { background: url("../images/profile-photo-joan.jpg") no-repeat top left transparent; }
+#upper-block #profile-pic .frame { background: url("../images/profile-photo-john.jpg") no-repeat top left transparent; }
 
 /* --- Profile Tabs ----*/
 
@@ -43,6 +43,8 @@ h3 { color: #005fbd; }
 #tabs ul li.location a { background: url("../images/farmers-tab-icons.png") no-repeat 12px -55px transparent; }
 
 #tabs #tab-1 .blue-button a { background: url("../images/tab-button-bg.png") no-repeat 0 -33px transparent; }
+
+.tab-info-email { background: url("../images/email-sprite.png") no-repeat 1px -26px transparent; }
 
 #tabs #tab-3 a { color: #005fbd; }
 

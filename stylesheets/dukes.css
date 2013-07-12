@@ -30,7 +30,7 @@ h3 { color: #233b70; }
 
 #upper-block #profile-name { color: #233b70; }
 
-#upper-block #profile-pic .frame { background: url("../images/profile-photo-michael.jpg") no-repeat top left transparent; }
+#upper-block #profile-pic .frame { background: url("../images/profile-photo-angela.jpg") no-repeat top left transparent; }
 
 /* --- Profile Tabs ----*/
 
@@ -43,6 +43,8 @@ h3 { color: #233b70; }
 #tabs ul li.location a { background: url("../images/independent-tab-icons.png") no-repeat 12px -55px transparent; }
 
 #tabs #tab-1 .blue-button a { background: url("../images/tab-button-bg.png") no-repeat 0 -72px transparent; }
+
+.tab-info-email { background: url("../images/email-sprite.png") no-repeat 1px -56px transparent; }
 
 #tabs #tab-3 a { color: #233b70; }
 
