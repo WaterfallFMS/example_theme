@@ -932,7 +932,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 
 #footer { 
   margin: 55px 0 0 0;
-  padding: 0 0 15px 50px;
+  padding-bottom: 15px;
   color: #666666;
   font-family: arial,sans-serif;
   font-size: 11px;
@@ -947,7 +947,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 #copyright-menu ul { 
 	float: left;
 	margin: 0 0 1em 0;
-	padding: 0;
+	padding: 0 0 0 25px;
 }
 #footer-menu ul li,
 #copyright-menu ul li {
@@ -977,6 +977,11 @@ img.left { float: left; margin: 0 0 1em 1em; }
 #footer a.bwm { color: #454545; text-decoration: none; }
 #footer a.bwm:hover { color: #3f8aca; text-decoration: underline; }
 
+#footer #powered-by {
+  float: right;
+  padding-right: 25px;
+  margin-top: -35px;
+}
 
 /* Overall Layout */
 
