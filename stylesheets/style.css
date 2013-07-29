@@ -537,13 +537,20 @@ img.left { float: left; margin: 0 0 1em 1em; }
 }
 
 #tabs #tab-1 .tab-left, 
-#tabs #tab-2 .tab-left,
-#tabs #tab-3 .tab-left { 
+#tabs #tab-2 .tab-left { 
   float:left;
   width: 45%;
   padding: 15px 0 0 15px;
   height: 141px;
 }
+
+#tabs #tab-3 .tab-left { 
+  float:left;
+  width: 51%;
+  padding: 15px 0 0 15px;
+  height: 141px;
+}
+
 
 .tab-left .tab-info,
 .tab-right .tab-info {
@@ -581,7 +588,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 
 #tabs #tab-3 .tab-right { 
   float:right;
-  padding: 40px 25px 0 0;
+  padding: 40px 8px 0 0;
 }
 
 #tabs #tab-1 a:hover { text-decoration: underline; }
