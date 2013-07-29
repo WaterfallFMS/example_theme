@@ -20,9 +20,9 @@ p {
   
 /* Global Styles */
 
-a, a:link { color: #3f8aca; text-decoration: none; }
+/*a, a:link { color: #3f8aca; text-decoration: none; }*/
 a img { text-decoration: none; border: none; }
-a:hover { color: #2a6aa1; text-decoration: none; }
+/*a:hover { color: #2a6aa1; text-decoration: none; }*/
 
 a.doc { background: url('../images/icons/doc.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
 a.txt { background: url('../images/icons/txt.gif') 0px 3px no-repeat; padding: 5px 0 5px 20px; }
@@ -1121,5 +1121,57 @@ margin-right: 25px;
   text-decoration: none; 
   margin-left: 4px; }
   
-  
-  
+  .billing {
+margin-top: 35px;
+width: 340px;
+float: left;
+margin-right: 13px;
+min-height: 85px;
+}
+
+.shipping {
+margin-top: 35px;
+width: 340px;
+float: left;
+margin-right: 13px;
+min-height: 85px;
+}
+
+.billing h2, .shipping h2 {
+font-size: 18px;
+border-bottom: 7px solid #EEEEEE;
+padding-bottom: 5px;
+}
+
+.billing p, .shipping p{
+font-size: 12px;
+}
+
+.billing span, .shipping span, .buttons span {
+color: #777777;
+}
+
+.billing p, .shipping p, .buttons p{
+color: #19488a;
+font-size: 12px;
+font-family: arial;
+line-height: 1.5em;
+}
+
+.right a, .right {
+padding-right: 10px;
+float: right;
+color: #ce2748;
+font-family: arial;
+font-size: 12px;
+font-weight: bold;
+margin: -5px 0 10px;
+text-decoration: none;
+}
+
+.billing a, a {
+color: #ce2748;
+text-decoration: none;
+}
+
+.billing a:hover { color: #2a6aa1; text-decoration: none; }
