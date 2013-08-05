@@ -211,7 +211,7 @@ img.left { float: left; margin: 0 0 1em 1em; }
 /* Top Nav */
 
 #logo { 
-  background: url("../images/logo.jpg") no-repeat center top transparent;
+  background: url("../images/logo.jpg") no-repeat center 8px transparent;
   padding: 50px 155px;
   float: left; }
 
