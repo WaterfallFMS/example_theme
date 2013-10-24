@@ -16,7 +16,7 @@ jQuery(document).ready(function($){
     success: function(data){
       $("#meetings").html('');
       
-      $.each(data, function(index,value){
+      $.each(data.reverse(), function(index,value){
         if(displayedEvents >= MEETING_COUNT){ return; }
 
         var start = new Date(value.start);
