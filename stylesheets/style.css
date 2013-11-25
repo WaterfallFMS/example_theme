@@ -948,12 +948,13 @@ font-family: arial,verdana,sans-serif;
 line-height: 28px;
 padding-left: 10px;
 padding-top: 18px;
+width: 650px;
 }
 
 #header #subtitle .top {
 font-family: georgia, times, serif;
 font-weight: bold;
-font-size: 30px;
+font-size: 25px;
 }
 
 #header #subtitle .bottom {
