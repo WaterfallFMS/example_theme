@@ -3,18 +3,10 @@
     {% yield_partial head %}
   </head>
   <body>
-    {% yield_partial corp_header %}
-
     {% yield_flash %}
     
-    <div class='maincontent'>
-      <div class='sidebar'>
-        {% yield_content Ad %}
-      </div>
-      
-      <div class='content'>
-        {% yield_page %}
-      </div>
-    </div>
+    {% yield_page %}
+    
+    {% yield_partial javascript %}
   </body>
 </html>

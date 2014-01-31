@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
   <head>
     {% yield_partial head %}
@@ -8,5 +9,7 @@
     {% yield_flash %}
     
     <img src="../images/admin-logo.png">
+    
+    {% yield_partial javascript %}
   </body>
 </html>
