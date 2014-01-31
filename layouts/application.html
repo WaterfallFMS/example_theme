@@ -3,10 +3,12 @@
     {% yield_partial head %}
   </head>
   <body>
+    {% yield_partial header %}
     {% yield_flash %}
     
     {% yield_page %}
     
+    {% yield_partial footer %}
     {% yield_partial javascript %}
   </body>
 </html>
