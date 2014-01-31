@@ -4,12 +4,12 @@
     {% yield_partial head %}
   </head>
   <body>
-    {% yield_partial corp_header %}
-
-    {% yield_flash %}
+      {% yield_partial header %}
+      {% yield_flash %}
     
-    <img src="../images/admin-logo.png">
+      {% yield_partial landing %}
     
-    {% yield_partial javascript %}
+      {% yield_partial footer %}
+      {% yield_partial javascript %}
   </body>
 </html>
